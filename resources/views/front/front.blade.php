@@ -33,6 +33,11 @@
 
 <body>
 
+    
+    @include("partials.frontnav")
+    @yield("content")
+    @include("partials.frontFooter")
+
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -44,7 +49,7 @@
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src=" {{asset("lib/owlcarousel/owl.carousel.min.js")}} "></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
