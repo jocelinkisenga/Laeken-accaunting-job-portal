@@ -12,7 +12,7 @@
                 <a href="index.html" class="nav-item nav-link text-white">Acceuil</a>
                 <a href="about.html" class="nav-item nav-link text-white">A propos</a>
 
-                <a href="contact.html" class="nav-item nav-link text-white">Contact</a>
+                <a href="{{route("contact")}} " class="nav-item nav-link text-white">Contact</a>
             </div>
             <a href="" class="btn bg-white  py-4 px-lg-5 d-none d-lg-block" id="postuler">POSTULER<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
