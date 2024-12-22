@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminCandidateController;
+use App\Http\Controllers\AdminCompanController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CandidateController;
 use App\Http\Controllers\CompanyController;
@@ -23,6 +25,8 @@ Route::get("candidate",[CandidateController::class,"create"])->name("create.cand
 Route::get("/company",[CompanyController::class,"create"])->name("create.company");
 
 Route::middleware("auth")->group(function (){
-    Route::get("home", [AdminController::class,"index"])->name("admin.home");
+    Route::get("dashboard", [AdminController::class,"index"])->name("admin.home");
+    Route::get("adminCandidates",[AdminCandidateController::class,"index"])->name("admin.candidates");
+    Route::get("adminCompagnies",[AdminCompanController::class,"index"])->name("admin.compagnies");
 });
 require __DIR__ . '/auth.php';

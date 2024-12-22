@@ -27,15 +27,6 @@
             </label>
             <input type="text" wire:model="phone" class="form-control" id="">
           </div>
-
-          <div class="col-md-12">
-            <label for="inputEmail4" class="form-label">Description
-              @error("description")
-            <span class="ml-4 text-danger">{{ $message }}</span>
-          @enderror
-            </label>
-           <textarea wire:model="description" id="" cols="30" rows="10" class="form-control"></textarea>
-          </div>
           <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Lettre
               @error("motivation")
@@ -44,10 +35,19 @@
             </label>
             <input type="file" wire:model="motivation" class="form-control" id="inputPassword4">
           </div>
+          <div class="col-md-12">
+            <label for="inputEmail4" class="form-label">Description
+              @error("description")
+            <span class="ml-4 text-danger">{{ $message }}</span>
+          @enderror
+            </label>
+           <textarea wire:model="description" id="" cols="30" rows="10" class="form-control"></textarea>
+          </div>
+
       
   
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Envoyer la candidature</button>
+          <button type="submit" class="btn read-more">Envoyer l'offre</button>
         </div>
       </form>
 

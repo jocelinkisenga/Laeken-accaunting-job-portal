@@ -271,6 +271,9 @@
     z-index: -1;
     color: var(--bt);
 }
+.section-t{
+    color: var(--bt);
+}
 
 .section-title.text-start::before {
     color: var(--bt);
@@ -282,6 +285,10 @@
     width: calc(100% + 60px);
     left: 0;
     color: var(--bt);
+}
+
+.border-t{
+    border-color: var(--bt);
 }
 
 

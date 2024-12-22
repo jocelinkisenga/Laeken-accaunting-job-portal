@@ -8,8 +8,7 @@
                     <h1 class="display-3 text-white animated slideInDown">Contact</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="/">Accueil</a></li>
                             <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
                         </ol>
                     </nav>
@@ -18,17 +17,7 @@
         </div>
     </div>
     <!-- Header End -->
-    <div class="container mt-5"> 
-        <div class="card text-center">
-            <div class="card-body"> 
-                <h3 class="card-title">A la recherche d'un emploi / ou des candidats</h3> 
-                <p class="card-text">Nous vous offrons la possibilité de postuler au meilleur emploi et pour les entreprises recrutante une meilleur main d'oeuvres 
-                    qualifiée
-                    </p> <a href="{{ route("create.candidate") }}" class="btn btn-primary me-2 read-me">Postuler</a> 
-                    <a href="{{ route("create.company") }}" class="btn btn-secondary">Recruter</a> 
-                </div> 
-        </div>
-    </div>
+ @include("partials.cta")
 
     <!-- Contact Start -->
     <div class="container-xxl py-5">
@@ -40,14 +29,14 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h5></h5>
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                    
                     <div class="d-flex align-items-center mb-3">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 read-more" style="width: 50px; height: 50px;">
                             <i class="fa fa-map-marker-alt text-white"></i>
                         </div>
                         <div class="ms-3">
-                            <h5 class="text-primary">Office</h5>
-                            <p class="mb-0">123 Street, New York, USA</p>
+                            <h5 class="text-primary">Bureau</h5>
+                            <p class="mb-0"></p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-3">
@@ -56,7 +45,7 @@
                         </div>
                         <div class="ms-3">
                             <h5 class="text-primary">Mobile</h5>
-                            <p class="mb-0">+012 345 67890</p>
+                            <p class="mb-0"></p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
@@ -65,7 +54,7 @@
                         </div>
                         <div class="ms-3">
                             <h5 class="text-primary">Email</h5>
-                            <p class="mb-0">info@example.com</p>
+                            <p class="mb-0"></p>
                         </div>
                     </div>
                 </div>
@@ -81,19 +70,19 @@
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
+                                    <label for="name">Nom</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
+                                    <label for="email">Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
+                                    <label for="subject">Sujet</label>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -103,7 +92,7 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn read-more w-100 py-3" type="submit">Send Message</button>
+                                <button class="btn read-more w-100 py-3" type="submit">Envoyer</button>
                             </div>
                         </div>
                     </form>

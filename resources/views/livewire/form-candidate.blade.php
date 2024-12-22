@@ -41,7 +41,7 @@
       
   
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Envoyer la candidature</button>
+          <button type="submit" class="btn read-more">Envoyer la candidature</button>
         </div>
       </form>
 
