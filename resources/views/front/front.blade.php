@@ -6,7 +6,8 @@
     <title>Laeken Consulting</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="" name="Laeken consulting sarl, est une entreprise qui met en relation entre 
+    les recruteurs et les candidats aux posts">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
