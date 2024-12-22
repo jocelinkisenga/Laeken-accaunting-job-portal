@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string("domaine");
             $table->string("cv")->nullable();
             $table->string("motivation")->nullable();
+            $table->boolean("confirm")->default(false);
             $table->timestamps();
         });
     }

@@ -23,7 +23,7 @@ class FormCandidate extends Component
         "email" => "required|email",
         "phone" => "required",
         "domaine" => "required",
-        "cv" => "required|mime:pdf",
+        "cv" => "required|mimes:pdf",
         "motivation" => "required|mimes:pdf"
     ];
 

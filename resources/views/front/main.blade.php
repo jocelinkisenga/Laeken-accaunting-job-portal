@@ -97,8 +97,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h class="section-title bg-white text-start  pe-3">A PROPOS DE NOUS</h6>
-                    <h class="mb-4">Welcome to eLEARNING</h1>
+                    <h2 class="section-title bg-white text-start  pe-3">A PROPOS DE NOUS</h2>
+                    <h5 class="mb-4">Welcome to eLEARNING</h5>
                     <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
                     <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                     <div class="row gy-2 gx-4 mb-4">
@@ -215,7 +215,17 @@
         </div>
     </div>
     <!-- Team End -->
-
+    <div class="container mt-5"> 
+        <div class="card text-center">
+            <div class="card-body"> 
+                <h3 class="card-title">A la recherche d'un emploi / ou des candidats</h3> 
+                <p class="card-text">Nous vous offrons la possibilité de postuler au meilleur emploi et pour les entreprises recrutante une meilleur main d'oeuvres 
+                    qualifiée
+                    </p> <a href="{{ route("create.candidate") }}" class="btn btn-primary me-2 read-me">Postuler</a> 
+                    <a href="{{ route("create.company") }}" class="btn btn-secondary">Recruter</a> 
+                </div> 
+        </div>
+    </div>
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">

@@ -9,7 +9,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link text-white">Acceuil</a>
+                <a href="/" class="nav-item nav-link text-white">Acceuil</a>
                 <a href="about.html" class="nav-item nav-link text-white">A propos</a>
 
                 <a href="{{route("contact")}} " class="nav-item nav-link text-white">Contact</a>

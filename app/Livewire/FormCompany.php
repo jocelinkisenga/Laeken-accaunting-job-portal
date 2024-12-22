@@ -30,6 +30,7 @@ class FormCompany extends Component
     }
 
     public function submit(){
+        $this->validate();
         
         $motivpath = $this->motivation->store('uploads',"public");
         Company::create([

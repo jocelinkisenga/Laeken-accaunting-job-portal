@@ -1,25 +1,45 @@
 <div>
-    <form class="row g-3">
+    <form class="row g-3" wire:submit.prevent="submit">
         <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Nom de la société</label>
-          <input type="text" name="name" class="form-control" id="">
+          <label for="inputEmail4" class="form-label">Nom de la société
+            @error("name")
+            <span class="ml-4 text-danger">{{ $message }}</span>
+          @enderror
+          </label>
+          <input type="text" wire:model="name" class="form-control" id="">
         </div>
         <div class="col-md-6">
-          <label for="inputPassword4"  class="form-label">Email</label>
-          <input type="email" name="email" class="form-control" id="">
+          <label for="inputPassword4"  class="form-label">Email
+            @error("email")
+            <span class="ml-4 text-danger">{{ $message }}</span>
+          @enderror
+          </label>
+          <input type="email" wire:model="email" class="form-control" id="">
         </div>
         <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Téléphone</label>
-            <input type="text" name="phone" class="form-control" id="">
+            <label for="inputEmail4" class="form-label">Téléphone
+              @error("phone")
+            <span class="ml-4 text-danger">{{ $message }}</span>
+          @enderror
+            </label>
+            <input type="text" wire:model="phone" class="form-control" id="">
           </div>
 
           <div class="col-md-12">
-            <label for="inputEmail4" class="form-label">Description</label>
-           <textarea name="description" id="" cols="30" rows="10" class="form-control"></textarea>
+            <label for="inputEmail4" class="form-label">Description
+              @error("description")
+            <span class="ml-4 text-danger">{{ $message }}</span>
+          @enderror
+            </label>
+           <textarea wire:model="description" id="" cols="30" rows="10" class="form-control"></textarea>
           </div>
           <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Lettre</label>
-            <input type="file" name="motivation" class="form-control" id="inputPassword4">
+            <label for="inputPassword4" class="form-label">Lettre
+              @error("motivation")
+            <span class="ml-4 text-danger">{{ $message }}</span>
+          @enderror
+            </label>
+            <input type="file" wire:model="motivation" class="form-control" id="inputPassword4">
           </div>
       
   
