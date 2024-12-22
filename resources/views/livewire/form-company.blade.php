@@ -1,4 +1,7 @@
 <div>
+  @include("partials.cta")
+
+  <h3>Recruter des candidats</h3>
     <form class="row g-3" wire:submit.prevent="submit">
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Nom de la société

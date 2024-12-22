@@ -1,4 +1,6 @@
 <div>
+  @include("partials.cta")
+  <h3 class="text-center">Postuler à une offre d'emploi</h3>
     <form class="row g-3" wire:submit.prevent="submit">
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Nom et Post-Nom @error("name")
@@ -34,7 +36,7 @@
             <label for="inputPassword4" class="form-label">Lettre de motivation @error("motivation")
               <span class="ml-4 text-danger">{{ $message }}</span>
             @enderror</label>
-            <input type="file" wire:model="motivation" class="form-control" id="inputPassword4">
+            <input type="file" wire:model="motivation" class="form-control" id="">
           </div>
       
   
