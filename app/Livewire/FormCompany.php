@@ -40,16 +40,16 @@ class FormCompany extends Component
             "description" => $this->description,
             "motivation" => $motivpath
         ]);
-        session()->flash("candidature envoyé avec succès");
+        session()->flash("message","Offre envoyé avec succès");
         $this->vider();
     }
 
     private function vider()
     {
-         $name = "";
-         $email = "";
-         $phone = "";
-         $description = "";
-         $motivation = "";
+         $this->name = " ";
+         $this->email = " ";
+         $this->phone = " ";
+         $this->description = " ";
+         $this->motivation = " ";
     }
 }

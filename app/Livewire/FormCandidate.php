@@ -46,17 +46,18 @@ class FormCandidate extends Component
             "motivation" => $motivpath
         ]);
 
-        session()->flash("candidature envoyé avec succès");
+        session()->flash("message","Candidature envoyé avec succès, nous vous informerons
+        dans un bref delai");
         $this->vider();
     }
 
     private function vider()
     {
-         $name = "";
-         $email = "";
-         $phone = "";
-         $domaine = "";
-         $cv = "";
-         $motivation = "";
+         $this->name = " ";
+         $this->email = " ";
+         $this->phone = " ";
+         $this->domaine = " ";
+         $this->cv = "";
+         $this->motivation = " ";
     }
 }

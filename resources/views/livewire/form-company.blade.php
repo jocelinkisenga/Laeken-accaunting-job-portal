@@ -1,5 +1,10 @@
 <div>
   @include("partials.cta")
+ @if (session()->has("message"))
+  <div class="alert alert-success text-success">
+    {{ session('message') }}
+    </div>
+ @endif
 
   <h3>Recruter des candidats</h3>
     <form class="row g-3" wire:submit.prevent="submit">
@@ -43,9 +48,9 @@
             </label>
            <textarea wire:model="description" id="" cols="30" rows="10" class="form-control"></textarea>
           </div>
-
+          <div wire:loading wire:target="motivation">En cours d'envoi</div>
       
-  
+          
         <div class="col-12">
           <button type="submit" class="btn read-more">Envoyer l'offre</button>
         </div>
