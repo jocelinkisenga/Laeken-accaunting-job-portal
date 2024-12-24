@@ -1,9 +1,15 @@
     <!-- Navbar Start -->
     <nav class="navbar  navbar-expand-lg  navbar-light shadow sticky-top p-0">
-        <a href="/" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-white"><i class="fa fa-book me-3"></i>Laeken Consulting</h2>
+        <a href="/" class="navbar-brand d-flex align-items-center px-2 px-lg-2">
+            <img
+                src="{{ asset("img/logo.jpg") }}"
+                class="img-fluid rounded-circle" style="width:90%; height:90%"
+                alt=""
+            />
+            <h3 class="text-white ml-2">
+             Laeken Consulting</h3>
         </a>
-        <button type="button" class="navbar-toggler me-4" style="background-color : hsl(234, 99%, 29%); color :#f8f8f8; height:2em; border-color :#f8f8f8" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler me-2" style="background-color : hsl(234, 99%, 29%); color :#f8f8f8; height:2em; border-color :#f8f8f8" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             {{-- <span class="navbar-toggler-icon" style="color : #171acc;" ></span> --}}
             MENU
         </button>

@@ -136,7 +136,7 @@
 
 
     <!-- Team Start -->
-    <div class="container-xxl py-5">
+    {{-- <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h2 class="section-title bg-white text-center  px-3">NOTRE EQUIPE</h2>
@@ -192,7 +192,7 @@
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">Instructor Name</h5>
+                            <h5 class="mb-0"></h5>
                             <small>Designation</small>
                         </div>
                     </div>
@@ -200,7 +200,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <img class="img-fluid" src="" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -217,7 +217,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Team End -->
 @include('partials.cta')
 
@@ -230,35 +230,44 @@
             </div>
             <div class="owl-carousel testimonial-carousel position-relative">
                 <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
+                    
+                    <h5 class="mb-0"> Jean-Pierre Ngalula</h5>
+                  
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-0">je suis impressionnée par le service de LAEKEN CONSULTING. Leur équipe a
+                        parfaitement compris mes besoins en recrutement et m'a aidée à trouver les bons talents
+                        pour mon entreprise. Leur réactivité et leur professionnalisme sont inégalés. Merci pour
+                        votre aide précieuse !</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
+                    
+                    <h5 class="mb-0">Pathel</h5>
                     <p></p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-0">Travailler avec LAEKEN CONSULTING a été une expérience formidable. Ils m'ont aidé à
+                        recruter des profils de haute qualité pour notre entreprise en RDC. Le processus a été
+                        rapide et sans accroc. Je suis ravi des résultats et recommande vivement leurs services.</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
+                 
+                    <h5 class="mb-0">Chantal Ndala</h5>
+                  
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-0">"LAEKEN CONSULTING m'a permis de trouver un emploi qui correspond parfaitement à
+                        mes compétences. Leur équipe m'a guidée dans chaque étape, du dépôt de ma candidature
+                        à l'entretien. Une expérience que je n'oublierai pas !</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
+             
+                    <h5 class="mb-0">Zhao Li</h5>
+                  
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-0">L’équipe de LAEKEN CONSULTING a été très professionnelle tout au long du processus de
+                        recrutement. Ils comprennent bien le marché local et ont trouvé des candidats adaptés à nos
+                        besoins. Très satisfait de leur service !</p>
                     </div>
                 </div>
             </div>

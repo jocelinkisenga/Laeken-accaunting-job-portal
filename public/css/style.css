@@ -6,6 +6,9 @@
     --bt :hsl(234, 99%, 29%);
 }
 
+.test {
+    background-color: var(--bt);
+}
 .fw-medium {
     font-weight: 600 !important;
 }
