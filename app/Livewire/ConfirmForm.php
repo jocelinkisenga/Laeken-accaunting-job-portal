@@ -2,6 +2,9 @@
 
 namespace App\Livewire;
 
+use App\Mail\Confirm;
+use App\Models\Candidate;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 
 class ConfirmForm extends Component
@@ -12,25 +15,32 @@ class ConfirmForm extends Component
     protected $rules = [
         "description " => "required"
     ];
+
     public function render()
     {
         return view('livewire.confirm-form');
     }
 
-    public function confirm () {
+    public function confirm () 
+    {
 
         $this->validate();
+
         ConfirmForm::create([
             "candidate_id" => $this->candidateId,
             "description" => $this->description,
             'confirm' => true
         ]);
-        $this->vider();
 
-        session()->flash("message", "message envoyer avec succèss");
-    }
+        $candidate = Candidate::where("candidate_id", $this->candidateId)->get(["name", "email"]);
 
-    private function vider () {
-        $this->description = "" ;
+        $title = "bonjour".$name.";
+        $body = $this->description;
+
+        Mail::to($candidate->email)->send(new Confirm($title, $body));
+
+
+       
     }
-}
+    
+    }
