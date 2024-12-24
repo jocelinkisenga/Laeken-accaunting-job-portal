@@ -24,6 +24,7 @@ Route::get("/", [App\Http\Controllers\MainController::class, "index"])->name('ho
 Route::get("/contact", [ContactController::class,'index'])->name("contact");
 Route::get("candidate",[CandidateController::class,"create"])->name("create.candidate");
 Route::get("/company",[CompanyController::class,"create"])->name("create.company");
+Route::get("/about", [ContactController::class,'about'])->name("about");
 
 Route::middleware("auth")->group(function (){
     Route::get("dashboard", [AdminController::class,"index"])->name("admin.home");

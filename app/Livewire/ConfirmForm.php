@@ -21,7 +21,7 @@ class ConfirmForm extends Component
         return view('livewire.confirm-form');
     }
 
-    public function confirm () 
+    public function confirmer()
     {
 
         $this->validate();
