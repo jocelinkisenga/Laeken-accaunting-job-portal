@@ -28,7 +28,7 @@
                         <div class="row justify-content-start">
                             <div class="col-sm-10 col-lg-8">
                                 <h5 class="section-t text-uppercase mb-3 animated slideInDown">Découvrez les meilleurs profils</h5>
-                                <h1 class="display-3 text-white animated slideInDown">Une main d'oeuvre quafiée</h1>
+                                <h1 class="display-3 text-white animated slideInDown">Une main d'oeuvre qualifiée</h1>
                                 <p class="fs-5 text-white mb-4 pb-2">Retrouvez auprès de nous la meilleure main d'oeuvre qualifiée</p>
                                 <a href="{{ route("create.candidate") }}" class="btn read-more py-md-3 px-md-5 me-3 animated slideInLeft">Postuler pour un emploi</a>
                                 <a href="{{ route("create.company") }}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Recruter des candidats</a>

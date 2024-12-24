@@ -36,7 +36,7 @@
                         </div>
                         <div class="ms-3">
                             <h5 class="text-primary">Bureau</h5>
-                            <p class="mb-0"></p>
+                            <p class="mb-0">272, Av. kambove, ville de Lubumbashi</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-3">
@@ -45,7 +45,7 @@
                         </div>
                         <div class="ms-3">
                             <h5 class="text-primary">Mobile</h5>
-                            <p class="mb-0"></p>
+                            <p class="mb-0">+243 992 278 885</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
@@ -54,7 +54,7 @@
                         </div>
                         <div class="ms-3">
                             <h5 class="text-primary">Email</h5>
-                            <p class="mb-0"></p>
+                            <p class="mb-0">contact@laekenconsulting.com</p>
                         </div>
                     </div>
                 </div>
