@@ -25,7 +25,15 @@
                         <td>{{ $candidate->email }}</td>
                         <td>{{ $candidate->phone }}</td>
                         <td>{{ $candidate->domaine }}</td>
-                        <td></td>
+                        <td>
+                            <a href="{{ route("cv",["id" => $candidate->id]) }}" class="m-1">CV
+                                <span class="fa fa-eye text-success"></span>
+                            </a>
+                            <a href="{{ route("lm",['id' => $candidate->id]) }}" class="m-1">LM
+                                <span class="fa fa-eye text-warning"></span>
+                            </a>
+                            <a href="{{ route('confirm',['id'=> $candidate->id]) }}" class="btn read-more btn-primary">confirmer</a>
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>

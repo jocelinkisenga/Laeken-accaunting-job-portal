@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class AdminCandidateController extends Controller
 {
     public function index () : View {
-        $candidates = Candidate::latest();
+        $candidates = Candidate::latest()->get();
         return view("admin.admincandidates", ['candidates' => $candidates]);
     }
 }

@@ -18,8 +18,8 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="admin/css/sb-admin-2.min.css" rel="stylesheet">
-
+    <link href="{{ asset("admin/css/sb-admin-2.min.css" ) }}" rel="stylesheet">
+@livewireStyles
 </head>
 
 <body id="page-top">
@@ -50,7 +50,7 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
-
+@livewireScripts
     <!-- JavaScript Libraries -->
     <script src="admin/vendor/jquery/jquery.min.js"></script>
     <script src="{{asset("vendor/bootstrap/js/bootstrap.min.js")}}"></script>

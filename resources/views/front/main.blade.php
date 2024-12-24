@@ -43,6 +43,10 @@
 
     <!-- Service Start -->
     <div class="container-xxl py-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h2 class="section-title bg-white text-center  px-3">NOS SERVICES</h2>
+            <h5 class="mb-5"></h5>
+        </div>
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -59,7 +63,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-building section-t  mb-4"></i>
                             <h5 class="mb-3">Conseil RH</h5>
-                            <p>Optimisez vos processus des resources humaines grâce à notre expertise.</p>
+                            <p>Grace à notre expertise nous vous aidons à optimiser vos processus des resources humaines grâce.</p>
                         </div>
                     </div>
                 </div>
@@ -68,7 +72,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-user section-t mb-4"></i>
                             <h5 class="mb-3">Création de profil</h5>
-                            <p>Rejoignez notre réseau de talents pour accéder à des opportunités.</p>
+                            <p>Avec notre large réseau, nous vous mettons en contact différentes personnes afin d'accéder à différentes opportunités</p>
                         </div>
                     </div>
                 </div>
@@ -77,7 +81,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-handshake section-t  mb-4"></i>
                             <h5 class="mb-3">Accompagnement personnalisé</h5>
-                            <p>Bénéficiez de conseils pour optimiser votre recherche d’emploi.</p>
+                            <p>Bénéficiez de conseils pour optimiser votre recherche d’emploi et de trouver une main d'oeuvre qualifiée.</p>
                         </div>
                     </div>
                 </div>

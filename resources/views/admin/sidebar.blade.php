@@ -49,7 +49,7 @@
     <li class="nav-item">
         <form action="{{ route("logout") }}" method="POST">
             @csrf
-            <button class="nav-link bg-danger text-white" type="submit">Se deconnecter
+            <button class="btn nav-link btn-danger text-white" type="submit">Se deconnecter
                 <i class="fas fa-fw fa-table"></i>
     </li>
 
