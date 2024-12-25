@@ -29,12 +29,12 @@ class ConfirmForm extends Component
         ConfirmForm::create([
             "candidate_id" => $this->candidateId,
             "description" => $this->description,
-            'confirm' => true
+            "confirm" => true
         ]);
 
-        $candidate = Candidate::where("candidate_id", $this->candidateId)->get(["name", "email"]);
+        $candidate = Candidate::where("candidate_id", $this->candidateId)->get();
 
-        $title = "bonjour".$name.";
+        $title = "bonjour";
         $body = $this->description;
 
         Mail::to($candidate->email)->send(new Confirm($title, $body));
