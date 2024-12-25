@@ -60,35 +60,51 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <iframe class="position-relative rounded w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                        src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.515746704892!2d27.481123174625562!3d-11.657815434780003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19723fdd3d15ad9b%3A0xaacf462dbf8250e6!2sWenzeasy%20Group!5e0!3m2!1sfr!2scd!4v1735093707554!5m2!1sfr!2scd"
                         frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
                         tabindex="0"></iframe>
                 </div>
+             
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <form>
+                    <form wire:submit.prevent="submit">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Nom</label>
+                                    <input type="text" wire:model="name" class="form-control" id="name" placeholder="votre nom">
+                                    <label for="name">Nom             
+                                        @error("name")
+                                        <span class="text-danger ml-2">{{ $message }}</span>
+                                        @enderror</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Email</label>
+                                    <input type="email" wire:model="email" class="form-control" id="email" placeholder="votre Email">
+                                    <label for="email">Email
+                                        @error("email")
+                                        <span class="text-danger ml-2">{{ $message }}</span>
+                                        @enderror
+                                    </label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Sujet</label>
+                                    <input type="text" wire:model="subject" class="form-control" id="sujet" placeholder="votre sujet">
+                                    <label for="subject">Sujet 
+                                        @error("subject")
+                                        <span class="text-danger ml-2">{{ $message }}</span>
+                                        @enderror
+                                    </label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                    <label for="message">Message</label>
+                                    <textarea class="form-control" wire:model="msg" placeholder="votre message" id="message" style="height: 150px"></textarea>
+                                    <label for="message">Message
+                                        @error("msg")
+                                        <span class="text-danger ml-2">{{ $message }}</span>
+                                        @enderror
+                                    </label>
                                 </div>
                             </div>
                             <div class="col-12">
