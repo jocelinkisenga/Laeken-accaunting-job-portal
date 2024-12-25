@@ -49,6 +49,7 @@
     <!-- JavaScript Libraries -->
     <script src="admin/vendor/jquery/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="{{asset("bootstrap/js/bootstrap.min.js")}}"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
