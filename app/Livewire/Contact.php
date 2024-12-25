@@ -25,7 +25,7 @@ class Contact extends Component
     public function submit(){
 
         $this->validate();
-        Mail::to("kisengajocelin7@gmail.com")->send(new ContactMail($this->name, $this->title,$this->subject, $this->msg));
+        Mail::to("kisengajocelin7@gmail.com")->send(new ContactMail($this->name,$this->subject,$this->email, $this->msg));
 
 
     }
