@@ -16,7 +16,7 @@ class ContactMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct(public $name, public string $subject, public string $email, public string  $body)
+    public function __construct(public $name, public string $sujet, public string $email, public string  $body)
     {
         //
     }
@@ -27,7 +27,7 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: $this->subject,
+            subject: $this->sujet,
         );
     }
 
