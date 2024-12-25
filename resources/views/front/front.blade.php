@@ -5,9 +5,11 @@
     <meta charset="utf-8">
     <title>Laeken Consulting</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="Laeken consulting sarl, est une entreprise qui met en relation entre 
+    <meta name="keywords" content="emploi, recrutement, recherche d'emploi, offre d'emploi en rdc, Kamoa, Kimoto, TFM, Kolwezi,Lubumbashi,
+                           placement" >
+    <meta  name="description" content="Laeken consulting sarl, est une entreprise qui met en relation entre 
     les recruteurs et les candidats aux posts">
+    <meta name="author" content="Laeken consulting">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
