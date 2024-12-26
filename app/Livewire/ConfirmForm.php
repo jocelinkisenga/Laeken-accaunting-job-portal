@@ -39,7 +39,7 @@ class ConfirmForm extends Component
 
         Mail::to($candidate->email)->send(new Confirm( $body));
 
-
+        session()->flash("message", "Confirmation envoyé avec succès");
        
     }
     

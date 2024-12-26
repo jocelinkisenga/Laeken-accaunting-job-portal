@@ -16,7 +16,7 @@ class RecrutementMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct(public $name, public $email)
     {
         //
     }
@@ -27,7 +27,7 @@ class RecrutementMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Recrutement Mail',
+            subject: 'vous avez un nouvel recrutement',
         );
     }
 
@@ -37,7 +37,11 @@ class RecrutementMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'mailles.recrutementMail',
+            with : [
+                "name" => $this->name,
+                "email" => $this->email
+            ]
         );
     }
 

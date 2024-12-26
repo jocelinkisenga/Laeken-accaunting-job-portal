@@ -2,7 +2,9 @@
 
 namespace App\Livewire;
 
+use App\Mail\RecrutementMail;
 use App\Models\Company;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
@@ -39,7 +41,9 @@ class FormCompany extends Component
             "phone" => $this->phone,
             "description" => $this->description,
             "motivation" => $motivpath
-        ]);
+        ]);     
+        Mail::to(env("MAIL_FROM_ADDRESS"))->send(new RecrutementMail($this->name, $this->email));
+
         session()->flash("message","Offre envoyé avec succès");
         $this->vider();
     }
