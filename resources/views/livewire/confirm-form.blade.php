@@ -12,7 +12,7 @@
         <form action="" wire:submit.prevent="submit">
             <div class="mb-3 col-8">
                 <label for="" class="form-label"></label>
-                <textarea class="form-control" wire:model="description" id="" rows="3"></textarea>
+                <textarea class="form-control" wire:model="msg" id="" rows="3"></textarea>
             </div>
             <div class="row">
                 <div class="col-6">

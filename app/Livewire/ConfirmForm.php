@@ -9,12 +9,13 @@ use Livewire\Component;
 
 class ConfirmForm extends Component
 {
-    public $candidateId;
-    public  $description;
+    public  $candidateId;
+    public  $msg;
 
     protected $rules = [
-        "description " => "required"
+        "msg" => "required",
     ];
+
 
     public function render()
     {
@@ -26,16 +27,16 @@ class ConfirmForm extends Component
 
         $this->validate();
 
-        ConfirmForm::create([
+        \App\Models\ConfirmCandidate::create([
             "candidate_id" => $this->candidateId,
-            "description" => $this->description,
+            "description" => $this->msg,
             "confirm" => true
         ]);
 
-        $candidate = Candidate::where("candidate_id", $this->candidateId)->get();
+        $candidate = Candidate::where("id", $this->candidateId)->first();
 
        
-        $body = $this->description;
+        $body = $this->msg;
 
         Mail::to($candidate->email)->send(new Confirm( $body));
 
