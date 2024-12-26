@@ -60,7 +60,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary  back-to-top">Postuler pour un emploi</a>
+    <a href="{{ route("create.candidate") }}" class="btn btn-lg btn-primary  back-to-top">Postuler pour un emploi</a>
 
     @livewireScripts
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
