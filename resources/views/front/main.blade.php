@@ -1,21 +1,27 @@
-@extends("front.front")
-@section("title", "Laeken consulting  sarl")
-@section("content")
- 
+@extends('front.front')
+@section('title', 'Laeken consulting sarl')
+@section('content')
+
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/carousel-1.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(24, 29, 56, .7);">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-sm-10 col-lg-8">
                                 <h5 class="section-t text-uppercase mb-3 animated slideInDown">Recrutement sur mesure</h5>
                                 <h1 class="display-3 text-white animated slideInDown">Le meilleur Portail de l'emploi</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Engagement des solutions sur mesure adaptées à votre secteur</p>
-                                <a href="{{ route("create.candidate") }}" class="btn read-more py-md-3 px-md-5 me-3 animated slideInLeft">Postuler pour un emploi</a>
-                                <a href="{{ route("create.company") }}" class="btn btn-light border-t py-md-3 px-md-5 animated slideInRight">Recruter des candidats</a>
+                                <p class="fs-5 text-white mb-4 pb-2">Engagement des solutions sur mesure adaptées à votre
+                                    secteur</p>
+                                <a href="{{ route('create.candidate') }}"
+                                    class="btn read-more py-md-3 px-md-5 me-3 animated slideInLeft">Postuler pour un
+                                    emploi</a>
+                                <a href="{{ route('create.company') }}"
+                                    class="btn btn-light border-t py-md-3 px-md-5 animated slideInRight">Recruter des
+                                    candidats</a>
                             </div>
                         </div>
                     </div>
@@ -23,15 +29,21 @@
             </div>
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/carousel-2.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(24, 29, 56, .7);">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-sm-10 col-lg-8">
-                                <h5 class="section-t text-uppercase mb-3 animated slideInDown">Découvrez les meilleurs profils</h5>
+                                <h5 class="section-t text-uppercase mb-3 animated slideInDown">Découvrez les meilleurs
+                                    profils</h5>
                                 <h1 class="display-3 text-white animated slideInDown">Une main d'oeuvre qualifiée</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Retrouvez auprès de nous la meilleure main d'oeuvre qualifiée</p>
-                                <a href="{{ route("create.candidate") }}" class="btn read-more py-md-3 px-md-5 me-3 animated slideInLeft">Postuler pour un emploi</a>
-                                <a href="{{ route("create.company") }}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Recruter des candidats</a>
+                                <p class="fs-5 text-white mb-4 pb-2">Retrouvez auprès de nous la meilleure main d'oeuvre
+                                    qualifiée</p>
+                                <a href="{{ route('create.candidate') }}"
+                                    class="btn read-more py-md-3 px-md-5 me-3 animated slideInLeft">Postuler pour un
+                                    emploi</a>
+                                <a href="{{ route('create.company') }}"
+                                    class="btn btn-light py-md-3 px-md-5 animated slideInRight">Recruter des candidats</a>
                             </div>
                         </div>
                     </div>
@@ -63,7 +75,8 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-building section-t  mb-4"></i>
                             <h5 class="mb-3">Conseil RH</h5>
-                            <p>Grace à notre expertise nous vous aidons à optimiser vos processus des resources humaines grâce.</p>
+                            <p>Grace à notre expertise nous vous aidons à optimiser vos processus des resources humaines
+                                grâce.</p>
                         </div>
                     </div>
                 </div>
@@ -72,7 +85,8 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-user section-t mb-4"></i>
                             <h5 class="mb-3">Création de profil</h5>
-                            <p>Avec notre large réseau, nous vous mettons en contact différentes personnes afin d'accéder à différentes opportunités</p>
+                            <p>Avec notre large réseau, nous vous mettons en contact différentes personnes afin d'accéder à
+                                différentes opportunités</p>
                         </div>
                     </div>
                 </div>
@@ -81,7 +95,8 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-handshake section-t  mb-4"></i>
                             <h5 class="mb-3">Accompagnement personnalisé</h5>
-                            <p>Bénéficiez de conseils pour optimiser votre recherche d’emploi et de trouver une main d'oeuvre qualifiée.</p>
+                            <p>Bénéficiez de conseils pour optimiser votre recherche d’emploi et de trouver une main
+                                d'oeuvre qualifiée.</p>
                         </div>
                     </div>
                 </div>
@@ -97,14 +112,17 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100" src="{{ asset("img/carousel-2.jpg") }}" alt="recrutement" style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-100 h-100" src="{{ asset('img/cat-3.jpg') }}"
+                            alt="recrutement" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h2 class="section-title bg-white text-start  pe-3">A PROPOS DE NOUS</h2>
                     <h5 class="mb-4">Bienvenu chez Laeken Consulting</h5>
-                    <p class="mb-4">Pendant 5 ans entant qu'experts comptable nous avons accompagné des entreprises de differents secteurs dans les recrutements</p>
-                    <p class="mb-4">Ce savoir nous a permis de structurer notre expertiser et fonder Laeken Consulting sarl, afin de mettre en relation les entreprises et la main d'oeuvre qualifiée</p>
+                    <p class="mb-4">Pendant 5 ans entant qu'experts comptable nous avons accompagné des entreprises de
+                        differents secteurs dans les recrutements</p>
+                    <p class="mb-4">Ce savoir nous a permis de structurer notre expertiser et fonder Laeken Consulting
+                        sarl, afin de mettre en relation les entreprises et la main d'oeuvre qualifiée</p>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Comptables</p>
@@ -113,7 +131,8 @@
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Médecins</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Architecte, constructeurs</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Architecte, constructeurs
+                            </p>
                         </div>
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Mécaniciens, chauffeurs</p>
@@ -126,6 +145,47 @@
                         </div>
                     </div>
                     <a class="btn read-more py-3 px-5 mt-2" href="">En savoir plus</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h2 class="section-title bg-white text-start  pe-3">Notre recrutement</h2>
+
+                    <p class="mb-2">Chez Laeken Consulting, nous croyons fermement que le talent ne se résume pas aux
+                        diplômes.
+                        Votre passion, vos compétences pratiques et votre désir constant d'apprendre sont ce qui nous
+                        importe le plus.
+                        Qu'importe votre parcours — que vous soyez un jeune diplômé,
+                        un professionnel chevronné ou en pleine reconversion — nous vous ouvrons grand nos portes.</p>
+                    <h4>Pourquoi nous choisir?</h4>
+                    <p class="mb-2"><strong>Formation continue:</strong> Des programmes de développement et de formation continue vous
+                        attendent
+                        pour vous accompagner dans votre progression.</p>
+                    <p class="mb-2">
+                       <strong> Environnement collaboratif:</strong> Chez nous, chaque voix compte. Nous valorisons le travail d'équipe
+                        et la collaboration dans un cadre inclusif.
+                    </p>
+                    <p class="mb-3">
+                        Rejoindre Laeken Consulting, c’est bien plus qu’un simple emploi.
+                        C’est une opportunité de faire partie d’une communauté où chacun peut contribuer et évoluer.
+                        Faites le saut avec nous et transformez votre potentiel en succès!
+
+                        Ensemble, construisons l'avenir! 🚀
+                    </p>
+
+                    <a class="btn read-more py-3 px-5 mt-2" href="">En savoir plus</a>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100 rounded" src="{{ asset('img/carousel-1.jpg') }}"
+                            alt="recrutement" style="object-fit: cover;">
+                    </div>
                 </div>
             </div>
         </div>
@@ -219,7 +279,7 @@
         </div>
     </div> --}}
     <!-- Team End -->
-@include('partials.cta')
+    @include('partials.cta')
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -230,44 +290,46 @@
             </div>
             <div class="owl-carousel testimonial-carousel position-relative">
                 <div class="testimonial-item text-center">
-                    
+
                     <h5 class="mb-0"> Jean-Pierre Ngalula</h5>
-                  
+
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">je suis impressionnée par le service de LAEKEN CONSULTING. Leur équipe a
-                        parfaitement compris mes besoins en recrutement et m'a aidée à trouver les bons talents
-                        pour mon entreprise. Leur réactivité et leur professionnalisme sont inégalés. Merci pour
-                        votre aide précieuse !</p>
+                        <p class="mb-0">je suis impressionnée par le service de LAEKEN CONSULTING. Leur équipe a
+                            parfaitement compris mes besoins en recrutement et m'a aidée à trouver les bons talents
+                            pour mon entreprise. Leur réactivité et leur professionnalisme sont inégalés. Merci pour
+                            votre aide précieuse !</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    
+
                     <h5 class="mb-0">Pathel</h5>
                     <p></p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Travailler avec LAEKEN CONSULTING a été une expérience formidable. Ils m'ont aidé à
-                        recruter des profils de haute qualité pour notre entreprise en RDC. Le processus a été
-                        rapide et sans accroc. Je suis ravi des résultats et recommande vivement leurs services.</p>
+                        <p class="mb-0">Travailler avec LAEKEN CONSULTING a été une expérience formidable. Ils m'ont aidé
+                            à
+                            recruter des profils de haute qualité pour notre entreprise en RDC. Le processus a été
+                            rapide et sans accroc. Je suis ravi des résultats et recommande vivement leurs services.</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                 
+
                     <h5 class="mb-0">Chantal Ndala</h5>
-                  
+
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">"LAEKEN CONSULTING m'a permis de trouver un emploi qui correspond parfaitement à
-                        mes compétences. Leur équipe m'a guidée dans chaque étape, du dépôt de ma candidature
-                        à l'entretien. Une expérience que je n'oublierai pas !</p>
+                        <p class="mb-0">"LAEKEN CONSULTING m'a permis de trouver un emploi qui correspond parfaitement à
+                            mes compétences. Leur équipe m'a guidée dans chaque étape, du dépôt de ma candidature
+                            à l'entretien. Une expérience que je n'oublierai pas !</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-             
+
                     <h5 class="mb-0">Zhao Li</h5>
-                  
+
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">L’équipe de LAEKEN CONSULTING a été très professionnelle tout au long du processus de
-                        recrutement. Ils comprennent bien le marché local et ont trouvé des candidats adaptés à nos
-                        besoins. Très satisfait de leur service !</p>
+                        <p class="mb-0">L’équipe de LAEKEN CONSULTING a été très professionnelle tout au long du
+                            processus de
+                            recrutement. Ils comprennent bien le marché local et ont trouvé des candidats adaptés à nos
+                            besoins. Très satisfait de leur service !</p>
                     </div>
                 </div>
             </div>

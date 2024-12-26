@@ -9,14 +9,14 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class Confirm extends Mailable
+class RecrutementMail extends Mailable
 {
     use Queueable, SerializesModels;
 
     /**
      * Create a new message instance.
      */
-    public function __construct( private string  $body)
+    public function __construct(public $name, public $email)
     {
         //
     }
@@ -27,7 +27,7 @@ class Confirm extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Laeken Consulting',
+            subject: 'vous avez un nouvel recrutement',
         );
     }
 
@@ -37,10 +37,11 @@ class Confirm extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: "partials.mail",
-            with: [
-                'body' => $this->body,
-            ],
+            view: 'mailles.recrutementMail',
+            with : [
+                "name" => $this->name,
+                "email" => $this->email
+            ]
         );
     }
 
