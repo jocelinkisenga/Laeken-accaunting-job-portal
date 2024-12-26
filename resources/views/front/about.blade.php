@@ -6,7 +6,7 @@
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                 <div class="position-relative h-100">
-                    <img class="img-fluid position-absolute w-100 h-100" src="{{ asset("img/carousel-2.jpg") }}" alt="" style="object-fit: cover;">
+                    <img class="img-fluid position-absolute w-100 h-100" src="{{ asset("img/cat-3.jpg") }}" alt="" style="object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -41,4 +41,13 @@
 </div>
 
 @include("partials.cta")
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <h2 class="section-title bg-white text-start  pe-3">Domaines de recrutement</h2>
+    </div>
+</div>
+
+
+
 @endsection
