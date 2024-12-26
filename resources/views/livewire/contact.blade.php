@@ -64,7 +64,12 @@
                         frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
                         tabindex="0"></iframe>
                 </div>
-             
+                @if (session("message"))
+                    <div class="m-4">
+                        <span class="alert alert-success text-success">{{ session('message') }}</span>
+                    </div>
+                @endif
+
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                     <form wire:submit.prevent="submit">
                         <div class="row g-3">

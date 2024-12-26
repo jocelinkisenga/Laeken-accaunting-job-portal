@@ -8,9 +8,8 @@
 </head>
 <body>
     <div>
-        <p><strong>Nom</strong> : {{ $name }}</p>
-        <p><strong>Adresse email</strong> : {{ $email }}</p>
-        <p><strong>Message</strong> :<br>{{ $body }}</p>
+
+        <p style="background-color: blue; color:white;"><strong>Message</strong> :<br>{{ $body }}</p>
     </div>
 </body>
 </html>

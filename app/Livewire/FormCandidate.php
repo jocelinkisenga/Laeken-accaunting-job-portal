@@ -2,8 +2,10 @@
 
 namespace App\Livewire;
 
+use App\Mail\CandidatureMail;
 use App\Models\Candidate;
 use App\Models\Company;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
@@ -45,6 +47,7 @@ class FormCandidate extends Component
             "cv" => $cvpath,
             "motivation" => $motivpath
         ]);
+        Mail::to(env("MAIL_FROM_ADDRESS"))->send(new CandidatureMail($this->name, $this->email));
 
         session()->flash("message","Candidature envoyé avec succès, nous vous informerons
         dans un bref delai");
