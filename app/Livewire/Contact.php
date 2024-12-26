@@ -27,6 +27,7 @@ class Contact extends Component
         $this->validate();
         Mail::to("kisengajocelin7@gmail.com")->send(new ContactMail($this->name, $this->title,$this->email, $this->msg));
 
-
+        session()->flash("message", "Message envoyé avec succés");
+        
     }
 }
