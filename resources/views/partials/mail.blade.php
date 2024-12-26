@@ -9,7 +9,7 @@
 <body>
     <h1>Bonjour</h1>
     <p>
-        {{ $data['message'] }}
+        {{ $body }}
     </p>
 </body>
 </html>
