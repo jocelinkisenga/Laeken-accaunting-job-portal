@@ -7,7 +7,7 @@
  @endif
 
   <h3>Recruter des candidats</h3>
-    <form class="row g-3" wire:submit.prevent="submit">
+    <form class="row g-3 border-primary" wire:submit.prevent="submit" >
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Nom de la société
             @error("name")
@@ -33,7 +33,7 @@
             <input type="text" wire:model="phone" class="form-control" id="">
           </div>
           <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Lettre
+            <label for="inputPassword4" class="form-label">Lettre de recrutement
               @error("motivation")
             <span class="ml-4 text-danger">{{ $message }}</span>
           @enderror
