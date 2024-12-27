@@ -58,7 +58,7 @@
     }
   ],
   "start_url": "/index.php",
-  "display": "standalone",
+  "display": "fullscreen",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "lang": "fr",
@@ -68,5 +68,9 @@
     "productivity"
   ],
   "description": "Voulez vous installer Laeken consulting ?",
-  "orientation": "any"
+  "orientation": "any",
+  "display_override": [
+    "fullscreen",
+    "window-controls-overlay"
+  ]
 }
