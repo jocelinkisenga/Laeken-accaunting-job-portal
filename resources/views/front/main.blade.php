@@ -61,7 +61,7 @@
         </div>
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp h-100" data-wow-delay="0.1s">
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-users section-t  mb-4"></i>
@@ -70,13 +70,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp h-100" data-wow-delay="0.3s">
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-building section-t  mb-4"></i>
                             <h5 class="mb-3">Conseil RH</h5>
-                            <p>Grace à notre expertise nous vous aidons à optimiser vos processus des resources humaines
-                                grâce.</p>
+                            <p>Grâce à notre expertise, nous vous aidons à optimiser vos processus de gestion des ressources humaines.
+                                </p>
                         </div>
                     </div>
                 </div>
@@ -85,8 +85,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-user section-t mb-4"></i>
                             <h5 class="mb-3">Création de profil</h5>
-                            <p>Avec notre large réseau, nous vous mettons en contact différentes personnes afin d'accéder à
-                                différentes opportunités</p>
+                            <p>Grâce à notre vaste réseau, nous vous mettons en relation avec des personnes clés pour accéder à de nouvelles opportunités.</p>
                         </div>
                     </div>
                 </div>
@@ -95,8 +94,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-handshake section-t  mb-4"></i>
                             <h5 class="mb-3">Accompagnement personnalisé</h5>
-                            <p>Bénéficiez de conseils pour optimiser votre recherche d’emploi et de trouver une main
-                                d'oeuvre qualifiée.</p>
+                            <p>Profitez de conseils sur mesure pour optimiser votre recherche d'emploi ou recruter une main-d'œuvre qualifiée.</p>
                         </div>
                     </div>
                 </div>
@@ -119,10 +117,8 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h2 class="section-title bg-white text-start  pe-3">A PROPOS DE NOUS</h2>
                     <h5 class="mb-4">Bienvenu chez Laeken Consulting</h5>
-                    <p class="mb-4">Pendant 5 ans entant qu'experts comptable nous avons accompagné des entreprises de
-                        differents secteurs dans les recrutements</p>
-                    <p class="mb-4">Ce savoir nous a permis de structurer notre expertiser et fonder Laeken Consulting
-                        sarl, afin de mettre en relation les entreprises et la main d'oeuvre qualifiée</p>
+                    <p class="mb-4">Depuis 5 ans, en tant qu'experts-comptables, nous accompagnons des entreprises de divers secteurs dans leurs besoins en recrutement.</p>
+                    <p class="mb-4">Cette expertise nous a permis de structurer nos compétences et de fonder Laeken Consulting SARL, afin de connecter les entreprises avec une main-d'œuvre qualifiée.</p>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Comptables</p>
