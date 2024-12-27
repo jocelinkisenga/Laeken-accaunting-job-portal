@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('fav/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('fav/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('fav/favicon-16x16.png') }}">
-    <link rel="manifest" href="{{ asset('fav/site.webmanifest') }}">
+ 
 
     <!-- Favicon -->
     <link href="{{ asset('img/favicon.ico') }}" rel="icon">
@@ -46,7 +46,8 @@
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef"/>
-
+    <link rel="apple-touch-icon" href="{{ asset('logo.png') }}">
+    <link rel="manifest" href="{{ asset('/manifest.json') }}">
     @livewireStyles
 </head>
 
