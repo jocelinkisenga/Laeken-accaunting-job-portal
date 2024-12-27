@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h2>vous avez un nouveau recrutement de {{ $name }}</h2>
+    <p>
+        son addresse mail est : {{ $email }}
+    </p>
 </body>
 </html>

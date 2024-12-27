@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class ConfirmCandidate extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        "candidate_id" ,
+
+        "description" ,
+
+        "confirm"
+    ];
 }
