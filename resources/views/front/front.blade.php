@@ -12,13 +12,13 @@
         content="Laeken consulting sarl, est une entreprise qui met en relation entre 
     les recruteurs et les candidats aux posts">
     <meta name="author" content="Laeken consulting">
-    <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
-    <link rel="manifest" href="/fav/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('fav/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('fav/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('fav/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('fav/site.webmanifest') }}">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="{{ asset('img/favicon.ico') }}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,18 +36,17 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="{{asset('lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{asset('lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <!-- PWA  -->
-<meta name="theme-color" content="#6777ef"/>
-<link rel="apple-touch-icon" href="{{ asset('logo.png') }}">
-<link rel="manifest" href="{{ asset('/manifest.json') }}">
+    <meta name="theme-color" content="#6777ef"/>
+
     @livewireStyles
 </head>
 
@@ -65,18 +64,18 @@
     @livewireScripts
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- JavaScript Libraries -->
-    <script src="admin/vendor/jquery/jquery.min.js"></script>
+    <script src="{{ asset('admin/vendor/jquery/jquery.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="{{ asset('lib/wow/wow.min.js') }}"></script>
+    <script src="{{ asset('lib/easing/easing.min.js') }}"></script>
+    <script src="{{ asset('lib/waypoints/waypoints.min.js') }}"></script>
     <script src=" {{ asset('lib/owlcarousel/owl.carousel.min.js') }} "></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="{{ asset('/sw.js') }}"></script>
+    <script src="{{ asset('js/main.js"></script>
+    <script src="{{ asset('sw.js') }}"></script>
 <script>
    if ("serviceWorker" in navigator) {
       // Register a service worker hosted at the root of the
