@@ -28,7 +28,7 @@ class Contact extends Component
 
         Mail::to(env("MAIL_FROM_ADDRESS"))->send(new ContactMail($this->name, $this->title,$this->email, $this->msg));
 
-        Mail::to("kisengajocelin7@gmail.com")->send(new ContactMail($this->name,$this->subject,$this->email, $this->msg));
+       
 
 
 
