@@ -26,7 +26,7 @@ class Contact extends Component
 
         $this->validate();
 
-        Mail::to(env("MAIL_FROM_ADDRESS"))->send(new ContactMail($this->name, $this->title,$this->email, $this->msg));
+        Mail::to(env("MAIL_FROM_ADDRESS"))->send(new ContactMail($this->name, $this->subject,$this->email, $this->msg));
 
        
 
