@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Laeken Consulting</title>
+    <title>Laeken Consulting Sarl  agence de recrutement</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="keywords"
         content="emploi, recrutement, recherche d'emploi, offre d'emploi en rdc, Kamoa, Kimoto, TFM, Kolwezi,Lubumbashi,
