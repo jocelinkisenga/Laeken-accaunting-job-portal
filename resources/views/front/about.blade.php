@@ -45,7 +45,7 @@
     </div>
 
     @include('partials.cta')
-
+<!--
     <div class="container-xxl py-5">
         <div class="container">
             <h2 class="section-title bg-white text-center  px-3">Nos autres services</h2>
@@ -181,7 +181,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
