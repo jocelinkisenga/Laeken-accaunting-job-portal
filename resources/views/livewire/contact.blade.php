@@ -75,40 +75,32 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" wire:model="name" class="form-control" id="name" placeholder="votre nom">
+                                    <input type="text" wire:model="name" class="form-control" id="name" placeholder="votre nom" required>
                                     <label for="name">Nom             
-                                        @error("name")
-                                        <span class="text-danger ml-2">{{ $message }}</span>
-                                        @enderror</label>
+                            </label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" wire:model="email" class="form-control" id="email" placeholder="votre Email">
+                                    <input type="email" wire:model="email" class="form-control" id="email" placeholder="votre Email" required>
                                     <label for="email">Email
-                                        @error("email")
-                                        <span class="text-danger ml-2">{{ $message }}</span>
-                                        @enderror
+
                                     </label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" wire:model="subject" class="form-control" id="sujet" placeholder="votre sujet">
+                                    <input type="text" wire:model="subject" class="form-control" id="sujet" placeholder="votre sujet" required>
                                     <label for="subject">Sujet 
-                                        @error("subject")
-                                        <span class="text-danger ml-2">{{ $message }}</span>
-                                        @enderror
+
                                     </label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" wire:model="msg" placeholder="votre message" id="message" style="height: 150px"></textarea>
+                                    <textarea class="form-control" wire:model="msg" placeholder="votre message" id="message" style="height: 150px" required></textarea>
                                     <label for="message">Message
-                                        @error("msg")
-                                        <span class="text-danger ml-2">{{ $message }}</span>
-                                        @enderror
+
                                     </label>
                                 </div>
                             </div>
