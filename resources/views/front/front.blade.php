@@ -58,8 +58,10 @@
 
 
     <!-- Back to Top -->
-    <a href="{{ route("create.candidate") }}" class="btn btn-lg btn-primary  back-to-top">Postuler pour un emploi</a>
-
+     <!-- <a href="{{ route("create.candidate") }}" class="btn btn-lg btn-primary  back-to-top">Postuler pour un emploi</a>  -->
+<a href="https://api.whatsapp.com/send?phone=+243850244690&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
     @livewireScripts
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- JavaScript Libraries -->
