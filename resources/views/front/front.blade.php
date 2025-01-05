@@ -3,15 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Laeken Consulting Sarl  agence de recrutement</title>
+    <title>Laeken Consulting Sarl  agence de recrutement et d'affectation </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="keywords"
         content="emploi, recrutement, recherche d'emploi, offre d'emploi en rdc, Kamoa, Kimoto, TFM, Kolwezi,Lubumbashi,
                            placement">
     <meta name="description"
         content="Laeken consulting sarl, est une entreprise qui met en relation entre 
-    les recruteurs et les candidats aux posts">
-    <meta name="author" content="Laeken consulting">
+    les recruteurs et les candidats à différents postes, elle aide les entreprises à trouver la meilleur main d'oeuvre et les candidats de rejoindre les meilleurs postes">
+    <meta name="author" content="Jocelin Kisenga">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('fav/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('fav/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('fav/favicon-16x16.png') }}">
@@ -26,7 +26,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
         rel="stylesheet">
-<script src="https://kit.fontawesome.com/89952608a5.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Icon Font Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
