@@ -20,7 +20,7 @@
 
                 <a href="{{route("contact")}} " class="nav-item nav-link text-white">Contact</a>
             </div>
-            <a href="{{ route("create.candidate") }}" class="btn bg-white  py-4 px-lg-5 d-none d-lg-block" id="postuler">POSTULER<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="{{ route("create.candidate") }}" class="btn bg-white  py-4 px-lg-5 d-none d-lg-block" id="postuler">POSTULER<i class="fa fa-whatsapp ms-3"></i></a>
         </div>
     </nav> 
     <!-- Navbar End -->
