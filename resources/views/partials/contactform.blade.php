@@ -9,7 +9,7 @@
 <body>
     <div>
 
-        <p style="background-color: blue; color:white;"><strong>Message</strong> :<br>{{ $body }}</p>
+        <p style=""><strong>Message</strong> :<br>{{ $body }}</p>
     </div>
 </body>
 </html>
