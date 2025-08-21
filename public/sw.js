@@ -9,7 +9,7 @@ self.addEventListener("install", function (event) {
     event.waitUntil(preLoad());
 });
 
-const filesToCache = [
+//const filesToCache = [
     '/',
     '/offline.html'
 ];
