@@ -4,7 +4,7 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <a class="btn btn-link" href="">A propos de nous</a>
-                    <a class="btn btn-link" href="wa.me/977773924" target="_blank">Nous contacter sur WhatsApp</a>
+                    <a class="btn btn-link" href="wa.me/243977773924" target="_blank">Discuter sur WhatsApp </a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Contact</h4>
