@@ -64,6 +64,44 @@
 
 
 </a>
+
+<!-- Bouton flottant WhatsApp -->
+<a href="https://wa.me/243812345678?text=Bonjour%2C%20j%27aimerais%20plus%20d%27infos"
+   class="btn btn-success btn-lg rounded-circle whatsapp-float"
+   target="_blank">
+   <i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i>
+</a>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<style>
+/* Position fixe */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  animation: pulse 1.5s infinite;
+}
+
+/* Animation pulsante */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+</style>
     @livewireScripts
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- JavaScript Libraries -->
