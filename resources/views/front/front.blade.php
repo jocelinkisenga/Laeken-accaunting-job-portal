@@ -66,7 +66,7 @@
 </a>
 
 <!-- Bouton flottant WhatsApp -->
-<a href="https://wa.me/243812345678?text=Bonjour%2C%20j%27aimerais%20plus%20d%27infos"
+<a href="https://wa.me/243977773924?text=Bonjour%2C%20j%27aimerais%20plus%20d%27infos"
    class="btn btn-success btn-lg rounded-circle whatsapp-float"
    target="_blank">
    <i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i>
