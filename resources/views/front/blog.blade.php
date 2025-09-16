@@ -14,7 +14,7 @@
                     <div class="card-body">
                         <h4 class="card-title">{{ $article->title }}</h4>
                         <p class="card-text">{{ $article->description }}</p>
-                        <a href="{{ route("front.single", ['title'=> $article->title, "id" => $article->id]) }}" class="btn btn-primary">Lire plus</a>
+                        <a href="{{ route("front.single.blog", ['title'=> $article->title, "id" => $article->id]) }}" class="btn btn-primary">Lire plus</a>
 
                     </div>
                     <div class="card-footer text-muted">

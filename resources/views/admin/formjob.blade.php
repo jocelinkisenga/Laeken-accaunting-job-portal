@@ -17,14 +17,15 @@
                     <form method="post" action="{{ route('store.job') }}">
                         @csrf
                         <div class="mb-3 row">
-                            <div class="col-6">
+                            <div class="col-6 col-sm-12 col-md-12">
                                 <label for="inputName" class="col-4 col-form-label">Titre</label>
                                 <div class="col-6">
                                     <input type="text" class="form-control" name="title" id="inputName" placeholder="Titre" />
                                 </div>
 
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-12 col-md-12">
+
                                 <label for="inputName" class="col-4 col-form-label">Date de fin</label>
                                 <div class="col-6">
                                     <input type="date" class="form-control" name="due_date" id="inputName" placeholder="Name" />
@@ -33,13 +34,14 @@
 
                             </div>
                         </div>
-                      
+
 
                         <fieldset class="mb-3 row">
-                            <legend class="col-form-legend col-4">
+                            <legend class="col-form-legend col-12">
                                 description
                             </legend>
-                            <div class="col-12">
+                            <div class="col-12 col-sm-12 col-md-12">
+
                                 <div class="mb-3">
 
                                     <textarea class="form-control" name="description" id="" rows="3"></textarea>

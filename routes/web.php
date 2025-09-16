@@ -28,9 +28,9 @@ Route::get("candidate",[CandidateController::class,"create"])->name("create.cand
 Route::get("/company",[CompanyController::class,"create"])->name("create.company");
 Route::get("/about", [ContactController::class,'about'])->name("about");
 Route::get("frontblog", [ArticleController::class, "front"])->name("front.blog");
-Route::get("Blogdetails/{title}/{id}", [ArticleController::class, "single"])->name("front.single");
+Route::get("Blogdetails/{title}/{id}", [ArticleController::class, "single"])->name("front.single.blog");
 Route::get("frontJob", [JobController::class, "front"])->name("front.jobs");
-Route::get("Blogdetails/{title}/{id}", [JobController::class, "single"])->name("front.single.job");
+Route::get("jobdetails/{title}/{id}", [JobController::class, "single"])->name("front.single.job");
 
 Route::middleware("auth")->group(function (){
     Route::get("dashboard", [AdminController::class,"index"])->name("admin.home");
