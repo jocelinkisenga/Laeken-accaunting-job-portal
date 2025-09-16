@@ -3,7 +3,9 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <a class="btn btn-link" href="">A propos de nous</a>
+                    <a class="btn btn-link" href="/about">A propos de nous</a>
+                    <a class="btn btn-link" href="">OFFRES D'EMPLOI</a>
+                    <a class="btn btn-link" href="">BLOG</a>
                     <a class="btn btn-link" href="https://wa.me/243977773924" target="_blank">Discuter sur WhatsApp </a>
                 </div>
                 <div class="col-lg-3 col-md-6">

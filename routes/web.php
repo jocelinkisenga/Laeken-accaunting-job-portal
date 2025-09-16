@@ -3,10 +3,12 @@
 use App\Http\Controllers\AdminCandidateController;
 use App\Http\Controllers\AdminCompanController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\CandidateController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\ConfirmCandidateController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\JobController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,6 +27,10 @@ Route::get("/contact", [ContactController::class,'index'])->name("contact");
 Route::get("candidate",[CandidateController::class,"create"])->name("create.candidate");
 Route::get("/company",[CompanyController::class,"create"])->name("create.company");
 Route::get("/about", [ContactController::class,'about'])->name("about");
+Route::get("frontblog", [ArticleController::class, "front"])->name("front.blog");
+Route::get("Blogdetails/{title}/{id}", [ArticleController::class, "single"])->name("front.single");
+Route::get("frontJob", [JobController::class, "front"])->name("front.jobs");
+Route::get("Blogdetails/{title}/{id}", [JobController::class, "single"])->name("front.single.job");
 
 Route::middleware("auth")->group(function (){
     Route::get("dashboard", [AdminController::class,"index"])->name("admin.home");
@@ -33,5 +39,11 @@ Route::middleware("auth")->group(function (){
     Route::get("/cv/{id}", [ConfirmCandidateController::class,"cv"])->name("cv");
     Route::get("/lm/{id}", [ConfirmCandidateController::class,"lm"])->name("lm");
     Route::get("confirm/{id}", [ConfirmCandidateController::class,"confirm"])->name("confirm");
+    Route::get("adminArticles", [ArticleController::class, "index"])->name("admin.index.article");
+    Route::get("adminjobs", [JobController::class, "index"])->name("admin.index.job");
+    Route::get("createArticles", [ArticleController::class, "create"])->name("admin.create.article");
+    Route::get("createJob", [JobController::class, "create"])->name("admin.create.job");
+    Route::post("storeArticles", [ArticleController::class, "store"])->name("admin.store.article");
+    Route::post("storeJob", [JobController::class, "store"])->name("store.job");
 });
 require __DIR__ . '/auth.php';

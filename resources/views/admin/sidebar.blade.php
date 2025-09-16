@@ -41,8 +41,24 @@
             <i class="fas fa-fw fa-wrench"></i>
             <span>Les Entreprises</span>
         </a>
-      
+
     </li>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="{{ route("admin.index.article") }}">
+                <i class="fas fa-fw fa-wrench"></i>
+                <span>Les Articles</span>
+            </a>
+
+        </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{{ route("admin.index.job") }}">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Offres d'emploi</span>
+                </a>
+
+            </li>
+
+
 
 
     <!-- Nav Item - Tables -->
@@ -53,6 +69,6 @@
                 <i class="fas fa-fw fa-table"></i>
     </li>
 
-    
+
 
 </ul>
