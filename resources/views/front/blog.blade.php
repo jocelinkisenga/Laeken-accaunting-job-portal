@@ -13,7 +13,7 @@
 
                     <div class="card-body">
                         <h4 class="card-title">{{ $article->title }}</h4>
-                        <p class="card-text">{{ $article->description }}</p>
+                        <p class="card-text">{{ Str::limit( $article->description, 50) }}</p>
                         <a href="{{ route("front.single.blog", ['title'=> $article->title, "id" => $article->id]) }}" class="btn btn-primary">Lire plus</a>
 
                     </div>

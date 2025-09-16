@@ -11,7 +11,8 @@
 
                     <div class="card-body">
                         <h4 class="card-title">{{ $job->title }}</h4>
-                        <p class="card-text">{{ $job->description }}</p>
+                        <p class="card-text">{{ Str::limit($job->description, 50) }}</p>
+
                         <a href="{{ route("front.single.job", ['title'=> $job->title, "id" => $job->id]) }}" class="btn btn-primary">Lire plus</a>
 
                     </div>
