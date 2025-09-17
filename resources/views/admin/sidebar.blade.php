@@ -6,7 +6,7 @@
     <!-- Divider -->
     <hr class="sidebar-divider">
     <li class="nav-item">
-        <a class="nav-link collapsed" href="https://comptabilite.laekenconsultin.com" target="_blank">
+        <a class="nav-link collapsed" href="https://comptabilite.laekenconsulting.com" target="_blank">
             <i class="fas fa-fw fa-cog"></i>
             <span>ACCEDEZ AU LOGICIEL</span>
         </a>
@@ -44,18 +44,5 @@
         </a>
 
     </li>
-
-
-
-
-    <!-- Nav Item - Tables -->
-    <li class="nav-item">
-        <form action="{{ route("logout") }}" method="POST">
-            @csrf
-            <button class="btn nav-link btn-danger text-white" type="submit">Se deconnecter
-                <i class="fas fa-fw fa-table"></i>
-    </li>
-
-
 
 </ul>

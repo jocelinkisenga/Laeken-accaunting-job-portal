@@ -95,7 +95,7 @@
 
             <li class="nav-item">
                 <form action="{{ route('logout') }}" method="POST">
-                    <input type="hidden" name="_token" value="Ck1dbWs4scnafSjmgDQllpSiqC3w4DO87GhuQm8d" autocomplete="off">
+                    @csrf
                     <button class="btn nav-link btn-danger text-white" type="submit">Se deconnecter
                         <i class="fas fa-fw fa-table"></i>
                     </button>
