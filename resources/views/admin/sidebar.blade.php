@@ -5,11 +5,18 @@
 
     <!-- Divider -->
     <hr class="sidebar-divider">
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="https://comptabilite.laekenconsultin.com" target="_blank">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>ACCEDEZ AU LOGICIEL</span>
+        </a>
+
+    </li>
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="{{ route("admin.candidates") }}">
-            <i class="fas fa-fw fa-cog"></i>
+            <i class="fas fa-fw fa-user"></i>
             <span>Les candidatures</span>
         </a>
 
@@ -18,14 +25,14 @@
     <!-- Nav Item - Utilities Collapse Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="{{ route("admin.compagnies") }}">
-            <i class="fas fa-fw fa-wrench"></i>
+            <i class="fas fa-fw fa-building"></i>
             <span>Les Entreprises</span>
         </a>
 
     </li>
     <li class="nav-item">
         <a class="nav-link collapsed" href="{{ route("admin.index.article") }}">
-            <i class="fas fa-fw fa-wrench"></i>
+            <i class="fas fa-fw fa-book"></i>
             <span>Les Articles</span>
         </a>
 

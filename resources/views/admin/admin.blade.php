@@ -90,9 +90,6 @@
 
             <hr class="sidebar-divider">
 
-            <div class="sidebar-heading">
-                Interface
-            </div>
 
             @include("admin.sidebar")
 
