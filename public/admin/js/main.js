@@ -10,8 +10,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -27,8 +27,8 @@
 
 
     // Sidebar Toggler
-    $('.sidebar-toggler').click(function () {
-        $('.sidebar, .content').toggleClass("open");
+    $(".sidebarToggleTop").click(function () {
+        $(".accordionSidebar, .content").toggleClass("open");
         return false;
     });
 
@@ -117,7 +117,7 @@
             responsive: true
         }
     });
-    
+
 
 
     // Single Line Chart
@@ -207,6 +207,13 @@
         }
     });
 
-    
+    const sidebarToggler = document.querySelector("#sidebarToggleTop");
+    const body = document.querySelector("body"); 
+
+    sidebarToggler.addEventListener("click", () => {
+        body.classList.toggle("sidebar-toggled");
+    });
+
+
 })(jQuery);
 
