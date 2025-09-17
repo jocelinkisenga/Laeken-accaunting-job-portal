@@ -34,4 +34,10 @@ class ArticleController extends Controller
     public function front () {
         return view('front.blog',['articles' => Article::latest()->get()]);
     }
+
+    public function destroy(int $id)
+    {
+        Article::destroy($id);
+        return redirect()->back();
+    }
 }

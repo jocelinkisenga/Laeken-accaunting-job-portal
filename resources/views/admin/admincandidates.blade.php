@@ -32,7 +32,7 @@
                             <a href="{{ route("lm",['id' => $candidate->id]) }}" class="m-1">LM
                                 <span class="fa fa-eye text-warning"></span>
                             </a>
-                            <a href="{{ route('confirm',['id'=> $candidate->id]) }}" class="btn read-more btn-primary">confirmer</a>
+                            <a href="{{ route('confirm.candidate',['id'=> $candidate->id]) }}" class="btn read-more btn-primary">confirmer</a>
                         </td>
                     </tr>
                     @endforeach

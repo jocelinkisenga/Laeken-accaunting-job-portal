@@ -38,11 +38,11 @@ Route::middleware("auth")->group(function (){
     Route::get("adminCompagnies",[AdminCompanController::class,"index"])->name("admin.compagnies");
     Route::get("/cv/{id}", [ConfirmCandidateController::class,"cv"])->name("cv");
     Route::get("/lm/{id}", [ConfirmCandidateController::class,"lm"])->name("lm");
-    Route::get("confirm/{id}", [ConfirmCandidateController::class,"confirm"])->name("confirm");
+    Route::get("confirmCandidature/{id}", [ConfirmCandidateController::class,"confirm"])->name("confirm.candidate");
     Route::get("adminArticles", [ArticleController::class, "index"])->name("admin.index.article");
     Route::get("adminjobs", [JobController::class, "index"])->name("admin.index.job");
     Route::get("createArticles", [ArticleController::class, "create"])->name("admin.create.article");
-    Route::get("deleteArticle", [ArticleController::class, "destroy"])->name(name: "admin.article.destroy");
+    Route::get("deleteArticle/{id}", [ArticleController::class, "destroy"])->name(name: "admin.article.destroy");
     Route::get("createJob", [JobController::class, "create"])->name("admin.create.job");
     Route::post("storeArticles", [ArticleController::class, "store"])->name("admin.store.article");
     Route::post("storeJob", [JobController::class, "store"])->name("store.job");
