@@ -9,7 +9,8 @@
                 <div class="card-body">
                     <div class="card-title">
                         <h1> {{ $job->title }}</h1>
-                        <p class="text-muted"> Auteur <strong>Laeken Consulting</strong>. fin candidature le {{ $job->created_at }}</p>
+                        <p class="text-muted"> Auteur <strong>Laeken Consulting</strong>. fin candidature le {{ $job->created_at }} <a href="{{ route("create.candidate") }}" class="btn btn-rounded read-more py-md-3 px-md-5 me-3 ">Postuler au job</a>
+                        </p>
 
                     </div>
                     <p class="card-text">

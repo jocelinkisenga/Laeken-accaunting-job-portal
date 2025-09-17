@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Boulot;
 use Illuminate\Http\Request;
 
+
+
 class JobController extends Controller
 {
     public function index()
@@ -17,7 +19,7 @@ class JobController extends Controller
 
     public function store(Request $request)
     {
-     
+
         Boulot::create([
             'title' => $request->title,
             'due_date' => $request->due_date,
@@ -33,5 +35,17 @@ class JobController extends Controller
 
     public function single ($title, $id) {
         return view("front.singleJob", ["job" => Boulot::findOrFail($id)]);
+    }
+
+    public function destroy (int $id) {
+        Boulot::destroy($id);
+        return redirect()->back();
+    }
+
+    public function confirm($id) {
+        $boulot = Boulot::findOrFail($id);
+        $boulot->update(['done' => true]);
+        return redirect()->back();
+
     }
 }

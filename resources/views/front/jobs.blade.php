@@ -1,6 +1,8 @@
 @extends('front.front')
 @section('title', 'a propos')
 @section('content')
+
+
 <div class="container my-5 bg-white">
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -24,14 +26,9 @@
 
             </div>
 
-
             @endforeach
-
-
-
 
         </div>
     </div>
 </div>
 @endsection
-

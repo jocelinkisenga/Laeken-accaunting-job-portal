@@ -33,7 +33,15 @@
                                     <td>{{ $key+1 }}</td>
                                     <td>{{ $boulot->title }}</td>
                                     <td>{{ $boulot->due_date }}</td>
-                                    <td></td>
+                                    <td>
+                                        <a href="{{ route("admin.job.confirm", ["id" => $boulot->id]) }}" class="btn btn-sm btn-success text-white">confirmer</a>
+
+
+                                        <a href="{{ route("admin.job.delete", ["id" => $boulot->id]) }}" class="btn btn-sm btn-danger text-white">supprimer</a>
+
+
+
+                                    </td>
                                 </tr>
                                 @endforeach
                             </tbody>
