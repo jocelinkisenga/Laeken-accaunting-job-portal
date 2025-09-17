@@ -23,54 +23,5 @@
             </div>
             <a href="{{ route("create.candidate") }}" class="btn bg-white  py-4 px-lg-5 d-none d-lg-block" id="postuler">POSTULER<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
-    </nav> 
-    <!-- Navbar End -->
-    {{-- <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Megawidth</a>
-          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fa fa-bars"></span> Menu
-          </button>
-          <div class="navbar-collapse collapse" id="ftco-nav" style="">
-            <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                <li class="nav-item dropdown position-static">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page</a>
-              <div class="dropdown-menu p-4" aria-labelledby="dropdown04">
-                  <div class="row">
-                      <div class="col-md-3">
-                          <a class="dropdown-item" href="#">Page 1</a>
-                        <a class="dropdown-item" href="#">Page 2</a>
-                        <a class="dropdown-item" href="#">Page 3</a>
-                        <a class="dropdown-item" href="#">Page 4</a>
-                      </div>
-                      <div class="col-md-3 d-none d-md-block">
-                          <a href="#" class="img" style="background-image: url(images/img-1.jpg);"></a>
-                          <div class="text">
-                              <h3><a href="#">Amazing Architecture</a></h3>
-                              <span>Architect</span>
-                          </div>
-                      </div>
-                      <div class="col-md-3 d-none d-md-block">
-                          <a href="#" class="img" style="background-image: url(images/img-2.jpg);"></a>
-                          <div class="text">
-                              <h3><a href="#">Amazing Architecture</a></h3>
-                              <span>Architect</span>
-                          </div>
-                      </div>
-                      <div class="col-md-3 d-none d-md-block">
-                          <a href="#" class="img" style="background-image: url(images/img-3.jpg);"></a>
-                          <div class="text">
-                              <h3><a href="#">Amazing Architecture</a></h3>
-                              <span>Architect</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-            </li>
-            </ul>
-          </div>
-        </div>
-      </nav> --}}
+    </nav>
+
