@@ -9,6 +9,8 @@ use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\ConfirmCandidateController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\JobController;
+use App\Http\Controllers\MainController;
+use Illuminate\Support\Facades\Route;
 
 
 /*
@@ -33,8 +35,8 @@ Route::get("frontJob", [JobController::class, "front"])->name("front.jobs");
 Route::get("jobdetails/{title}/{id}", [JobController::class, "single"])->name("front.single.job");
 
 
-require __DIR__ . '/auth.php';
+
 require __DIR__ . '/admin.php';
 require __DIR__ . '/prestataire.php';
 require __DIR__ . '/employeur.php';
-
+require __DIR__ . '/auth.php';
