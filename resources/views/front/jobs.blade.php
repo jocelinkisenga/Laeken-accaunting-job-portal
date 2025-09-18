@@ -3,32 +3,34 @@
 @section('content')
 
 
-<div class="container my-5 bg-white">
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
 
+<main class="py-5">
+    <div class="container container-max">
+        <h2>Liste des offres</h2>
+
+        <div class="row">
             @foreach ($jobs as $job)
-            <div class="col ">
-                <div class="card h-100 shadow-sm ">
-
-                    <div class="card-body">
-                        <h4 class="card-title">{{ $job->title }}</h4>
-                        <p class="card-text">{{ Str::limit($job->description, 50) }}</p>
-
-                        <a href="{{ route("front.single.job", ['title'=> $job->title, "id" => $job->id]) }}" class="btn btn-primary">Lire plus</a>
-
-                    </div>
-                    <div class="card-footer text-muted">
-                        publie le {{ $job->created_at }}
-                    </div>
-
+            <div class="col-md-8">
+                <div class="list-group">
+                    <a href="{{ route("front.single.job",["id" => $job->id]) }}" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">{{ $job->title }}</h5>
+                            <small class="small-muted">Kinshasa • CDI</small>
+                        </div>
+                        <p class="mb-1 small-muted">FinCorp • 5+ années d'expérience</p>
+                    </a>
+                    <a href="job-details.html" class="list-group-item list-group-item-action">
+                        <h5 class="mb-1">Analyste Comptable</h5>
+                        <p class="mb-1 small-muted">AuditPro • Remote</p>
+                    </a>
                 </div>
-
             </div>
 
             @endforeach
 
         </div>
+
     </div>
-</div>
+</main>
+
 @endsection

@@ -1,0 +1,20 @@
+/* assets/css/styles.css */
+:root{
+  --brand:#0d6efd;
+  --muted:#6c757d;
+  --bg:#f8f9fa;
+  --card:#ffffff;
+}
+body{background:var(--bg);color:#212529;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+.navbar-brand{font-weight:700;letter-spacing:0.2px;}
+.hero{padding:6rem 0;}
+.card-ghost{background:transparent;border:1px solid rgba(0,0,0,0.05);}
+.footer{background:#fff;border-top:1px solid rgba(0,0,0,0.05);padding:2rem 0;}
+.btn-primary{background:var(--brand);border-color:var(--brand);}
+.small-muted{color:var(--muted);font-size:0.9rem;}
+.form-control:focus{box-shadow:0 0 0 .15rem rgba(13,110,253,.08);border-color:var(--brand);}
+.table thead th{border-bottom:2px solid rgba(0,0,0,0.05);}
+.badge-pill{border-radius:10rem;padding:.5rem .7rem;}
+.avatar{width:48px;height:48px;border-radius:50%;}
+.container-max{max-width:1100px;}
+.card-compact{padding:1rem;}

@@ -1,90 +1,51 @@
-@extends('auth.body.main')
+@extends("front.front")
+@section("content")
+<main class="py-5">
+    <div class="container container-max">
+        <h2>Inscription</h2>
 
-@section('content')
-<div class="container">
-    <div class="row align-items-center justify-content-center height-self-center">
-        <div class="col-lg-8">
-            <div class="card auth-card">
-                <div class="card-body p-0">
-                    <div class="d-flex align-items-center auth-content">
-                        <div class="col-lg-7 align-self-center">
-                            <div class="p-3">
-
-                                <h2 class="mb-2">Register</h2>
-                                <p>Create your POSDash account.</p>
-
-                                <form method="POST" action="{{ route('register') }}">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card p-4">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#prest" type="button">Prestataire</button></li>
+                        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#employ" type="button">Employeur</button></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="prest">
+                            <form method="Post" action="{{ route("register") }}">
                                     @csrf
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="floating-label form-group">
-                                                <input class="floating-input form-control @error('name') is-invalid @enderror" type="text" placeholder=" " name="name" autocomplete="off" value="{{ old('name') }}" required>
-                                                <label>Full Name</label>
-                                            </div>
-                                            @error('name')
-                                            <div class="mb-4" style="margin-top: -20px">
-                                                <div class="text-danger small">{{ $message }}</div>
-                                            </div>
-                                            @enderror
-                                        </div>
+                                <div class="mb-3"><label class="form-label">Nom complet</label><input class="form-control" name="name" type="text"></div>
+                                <input type="hidden" name="role" value="2">
+                                <div class="mb-3"><label class="form-label">Email </label><input class="form-control" name="email" type="email"></div>
+                                <div class="mb-3"><label class="form-label">Telephone</label><input type="tel" class="form-control" name="phone"></div>
+                                <div class="mb-3"><label class="form-label">Specialite</label><input class="form-control" name="speciality"></div>
+                                <div class="mb-3"><label class="form-label">mot de passe</label><input class="form-control" name="password" type="password"></div>
+                            <button class="btn btn-primary" type="submit">Créer compte prestataire</button>
 
-                                        <div class="col-lg-12">
-                                            <div class="floating-label form-group">
-                                                <input class="floating-input form-control @error('username') is-invalid @enderror" type="text" placeholder=" " name="username" autocomplete="off" value="{{ old('username') }}"  required>
-                                                <label class="mb-1">Username</label>
-                                            </div>
-                                            @error('username')
-                                            <div class="mb-4" style="margin-top: -20px">
-                                                <div class="text-danger small">{{ $message }}</div>
-                                            </div>
-                                            @enderror
-                                        </div>
 
-                                        <div class="col-lg-12">
-                                            <div class="floating-label form-group">
-                                                <input class="floating-input form-control @error('email') is-invalid @enderror" type="email" placeholder=" " name="email" autocomplete="off" value="{{ old('email') }}" required>
-                                                <label>Email</label>
-                                            </div>
-                                            @error('email')
-                                            <div class="mb-4" style="margin-top: -20px">
-                                                <div class="text-danger small">{{ $message }}</div>
-                                            </div>
-                                            @enderror
-                                        </div>
-
-                                        <div class="col-lg-6">
-                                            <div class="floating-label form-group">
-                                                <input class="floating-input form-control @error('password') is-invalid @enderror" type="password" placeholder=" "  name="password" autocomplete="off" required>
-                                                <label>Password</label>
-                                            </div>
-                                            @error('password')
-                                            <div class="mb-4" style="margin-top: -20px">
-                                                <div class="text-danger small">{{ $message }}</div>
-                                            </div>
-                                            @enderror
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="floating-label form-group">
-                                                <input class="floating-input form-control" type="password" placeholder=" " name="password_confirmation" autocomplete="off" required>
-                                                <label>Confirm Password</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Register</button>
-                                    <p class="mt-3">
-                                        Already have an Account? <a href="{{ route('login') }}" class="text-primary">Log In</a>
-                                    </p>
-                                </form>
-                            </div>
+                            </form>
                         </div>
+                        <div class="tab-pane fade" id="employ">
+                            <form method="Post" action="{{ route("register") }}">
+                                @csrf
+                                <div class="mb-3"><label class="form-label">Nom de l'entreprise</label><input class="form-control" name="name" type="text"></div>
+                                <input type="hidden" name="role" value="3">
+                                <div class="mb-3"><label class="form-label">Email </label><input class="form-control" name="email" type="email"></div>
+                                <div class="mb-3"><label class="form-label">Telephone</label><input type="tel" class="form-control" name="phone"></div>
+                                <div class="mb-3"><label class="form-label">Domaine de service</label><input class="form-control" name="speciality"></div>
+                                <div class="mb-3"><label class="form-label">mot de passe</label><input class="form-control" name="password" type="password"></div>
 
-                        <div class="col-lg-5 content-right">
-                            <img src="{{ asset('assets/images/login/01.png') }}" class="img-fluid image-right" alt="">
+                                <button class="btn btn-primary" type="submit">Créer compte employeur</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
-</div>
+</main>
+
+
 @endsection
