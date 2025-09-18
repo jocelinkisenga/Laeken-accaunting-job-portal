@@ -17,6 +17,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->string("speciality")->nullable();
+            $table->integer("role")->nullable();
+            $table->string("phone")->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
@@ -25,7 +28,8 @@ return new class extends Migration
         User::create([
             "name" => "admin",
             "email" => "admin@laeken.com",
-            "password" => "12345678L"
+            "password" => "12345678L",
+            "role" => 1
         ]);
     }
 

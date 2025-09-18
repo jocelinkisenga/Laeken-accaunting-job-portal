@@ -16,7 +16,9 @@ return new class extends Migration
             $table->foreignId('user_id')->nullable();
             $table->string("title")->nullable();
             $table->text("description")->nullable();
+            $table->string("type")->nullable();
             $table->date("due_date")->nullable();
+            $table->boolean("published")->default(false);
             $table->boolean("done")->default(false);
             $table->timestamps();
         });
