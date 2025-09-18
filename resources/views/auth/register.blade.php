@@ -21,10 +21,13 @@
                                 <div class="mb-3"><label class="form-label">Telephone</label><input type="tel" class="form-control" name="phone"></div>
                                 <div class="mb-3"><label class="form-label">Specialite</label><input class="form-control" name="speciality"></div>
                                 <div class="mb-3"><label class="form-label">mot de passe</label><input class="form-control" name="password" type="password"></div>
+                                <div class="mb-3"><label class="form-label">confirmer le mot de passe</label><input class="form-control" name="password_confirmation" type="password"></div>
+
                             <button class="btn btn-primary" type="submit">Créer compte prestataire</button>
 
 
                             </form>
+
                         </div>
                         <div class="tab-pane fade" id="employ">
                             <form method="Post" action="{{ route("register") }}">
