@@ -20,7 +20,7 @@
                     <a href="{{  route("front.jobs") }}" class="btn btn-primary me-2">Voir les offres</a>
 
 
-                    <a href="register.html" class="btn btn-outline-secondary">Creer un emploi</a>
+                    <a href="{{ route("create.job") }}" class="btn btn-outline-secondary">Creer un emploi</a>
                     @endauth
                 </p>
                 <div class="mt-4 d-flex gap-3">

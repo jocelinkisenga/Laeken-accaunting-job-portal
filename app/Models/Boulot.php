@@ -13,7 +13,9 @@ class Boulot extends Model
     'title',
     'description',
     'due_date',
-    'done'
+    'done',
+    'published',
+        'type'
 ];
 
 protected $casts = [

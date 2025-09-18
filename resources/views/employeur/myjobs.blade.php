@@ -13,11 +13,26 @@
                 </tr>
             </thead>
             <tbody>
+                @forelse ( $boulots as $boulot )
+
                 <tr>
-                    <td>Assistant Paie</td>
-                    <td>Actif</td>
+                    <td>{{ $boulot->title }}</td>
+                    <td>
+                        @if ($boulot->done === false)
+                        En cours
+                        @elseif ($boulot->published === false)
+                        pas encore publie
+                        @else
+                        Boulot regle
+                        @endif
+                    </td>
                     <td><a class="btn btn-sm">Modifier</a></td>
                 </tr>
+
+                @empty
+
+                @endforelse
+
             </tbody>
         </table>
 
