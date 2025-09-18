@@ -7,11 +7,23 @@
                 <li class="nav-item"><a class="nav-link" href="{{ route("front.jobs") }}">Offres</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route("front.blog") }}">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route("about") }}">À propos</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route("contact") }}">Contact</a></li>
+                @guest
                 <li class="nav-item ms-3"><a class="btn btn-outline-primary" href="{{ route("register") }}">S'inscrire</a></li>
+
+                @endguest
+                @auth
+                <li class="nav-item ms-3">
+                    <form action="{{ route("logout") }}" method="post">
+                        @csrf
+                        <button class="btn btn-outline-danger">se deconnecter</button>
+
+                    </form>
+                </li>
+
+                @endauth
+
             </ul>
         </div>
     </div>
 </nav>
-
-

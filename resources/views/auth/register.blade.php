@@ -14,7 +14,7 @@
                     <div class="tab-content">
                         <div class="tab-pane fade show active" id="prest">
                             <form method="Post" action="{{ route("register") }}">
-                                    @csrf
+                                @csrf
                                 <div class="mb-3"><label class="form-label">Nom complet</label><input class="form-control" name="name" type="text"></div>
                                 <input type="hidden" name="role" value="2">
                                 <div class="mb-3"><label class="form-label">Email </label><input class="form-control" name="email" type="email"></div>
@@ -23,7 +23,7 @@
                                 <div class="mb-3"><label class="form-label">mot de passe</label><input class="form-control" name="password" type="password"></div>
                                 <div class="mb-3"><label class="form-label">confirmer le mot de passe</label><input class="form-control" name="password_confirmation" type="password"></div>
 
-                            <button class="btn btn-primary" type="submit">Créer compte prestataire</button>
+                                <button class="btn btn-primary" type="submit">Créer compte prestataire</button>
 
 
                             </form>
@@ -38,6 +38,8 @@
                                 <div class="mb-3"><label class="form-label">Telephone</label><input type="tel" class="form-control" name="phone"></div>
                                 <div class="mb-3"><label class="form-label">Domaine de service</label><input class="form-control" name="speciality"></div>
                                 <div class="mb-3"><label class="form-label">mot de passe</label><input class="form-control" name="password" type="password"></div>
+                                <div class="mb-3"><label class="form-label">confirmer le mot de passe</label><input class="form-control" name="password_confirmation" type="password"></div>
+
 
                                 <button class="btn btn-primary" type="submit">Créer compte employeur</button>
                             </form>

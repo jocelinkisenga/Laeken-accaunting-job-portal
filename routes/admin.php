@@ -1,3 +1,4 @@
+<?php 
 use App\Http\Controllers\Admin\AdminCandidateController;
 use App\Http\Controllers\Admin\AdminCompanController;
 use App\Http\Controllers\Admin\AdminController;

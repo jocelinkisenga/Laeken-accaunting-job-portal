@@ -10,4 +10,8 @@ class PrestataireController extends Controller
     public function index () {
         return view("prestataire.dashboard");
     }
+
+    public function myApplications () {
+        return view("prestataire.myapplications");
+    }
 }

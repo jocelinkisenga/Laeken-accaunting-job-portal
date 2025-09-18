@@ -1,6 +1,7 @@
 @extends('front.front')
 @section('title', 'Laeken consulting sarl')
 @section('content')
+
 <header class="hero">
     <div class="container container-max">
         <div class="row align-items-center">
@@ -8,8 +9,19 @@
                 <h1 class="display-5">Trouver des talents comptables ou décrocher votre prochain poste en finance</h1>
                 <p class="lead small-muted">Laeken connecte les prestataires comptables et les employeurs — recherche intelligente, candidatures rapides, et gestion simplifiée.</p>
                 <p>
-                    <a href="jobs.html" class="btn btn-primary me-2">Voir les offres</a>
-                    <a href="register.html" class="btn btn-outline-secondary">S'inscrire</a>
+
+                    @guest
+                    <a href="{{  route("front.jobs") }}" class="btn btn-primary me-2">Voir les offres</a>
+
+                    <a href="{{ route("register") }}}}" class="btn btn-outline-secondary">S'inscrire</a>
+
+                    @endguest
+                    @auth
+                    <a href="{{  route("front.jobs") }}" class="btn btn-primary me-2">Voir les offres</a>
+
+
+                    <a href="register.html" class="btn btn-outline-secondary">Creer un emploi</a>
+                    @endauth
                 </p>
                 <div class="mt-4 d-flex gap-3">
                     <div class="card card-compact card-ghost"><strong>1,250+</strong>

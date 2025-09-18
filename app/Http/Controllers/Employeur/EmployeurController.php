@@ -10,4 +10,14 @@ class EmployeurController extends Controller
     public function index () {
         return view("employeur.dashboard");
     }
+
+    public function myjobs()
+    {
+        return view("employeur.myjobs");
+    }
+
+    public function mycandidates()
+    {
+        return view("employeur.mycandidates");
+    }
 }
