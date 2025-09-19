@@ -26,6 +26,10 @@ class User extends Authenticatable
         'phone'
     ];
 
+    public function boulots() {
+        return $this->hasMany(Boulot::class);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *

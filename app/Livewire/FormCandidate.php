@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Mail\CandidatureMail;
 use App\Models\Candidate;
 use App\Models\Company;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -13,20 +14,13 @@ class FormCandidate extends Component
 {
     use WithFileUploads;
 
-    public $name;
-    public $email;
-    public $phone;
-    public $domaine;
+    public $boulotId;
     public $cv;
-    public $motivation;
+    public $description;
 
     protected $rules = [
-        "name" => "required",
-        "email" => "required|email",
-        "phone" => "required",
-        "domaine" => "required",
+        "description" => "required",
         "cv" => "required|mimes:pdf",
-        "motivation" => "required|mimes:pdf"
     ];
 
 
@@ -38,14 +32,11 @@ class FormCandidate extends Component
 
         $this->validate();
         $cvpath = $this->cv->store("uploads","public");
-        $motivpath = $this->motivation->store('uploads',"public");
         Candidate::create([
-            "name" => $this->name,
-            "email" => $this->email ,
-            "phone" => $this->phone,
-            "domaine" => $this->domaine,
-            "cv" => $cvpath,
-            "motivation" => $motivpath
+            "boulot_id" => $this->boulotId,
+            "user_id" => Auth::user()->id ,
+            "description" => $this->description,
+            "cv" => $cvpath
         ]);
         Mail::to(env("MAIL_FROM_ADDRESS"))->send(new CandidatureMail($this->name, $this->email));
 

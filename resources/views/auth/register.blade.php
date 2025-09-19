@@ -21,7 +21,7 @@
                                 <div class="mb-3"><label class="form-label">Telephone</label><input type="tel" class="form-control" name="phone"></div>
                                 <div class="mb-3"><label class="form-label">Specialite</label><input class="form-control" name="speciality"></div>
                                 <div class="mb-3"><label class="form-label">mot de passe</label><input class="form-control" name="password" type="password"></div>
-                                <div class="mb-3"><label class="form-label">confirmer le mot de passe</label><input class="form-control" name="password_confirmation" type="password"></div>
+                                {{-- <div class="mb-3"><label class="form-label">confirmer le mot de passe</label><input class="form-control" name="password_confirmation" type="password"></div> --}}
 
                                 <button class="btn btn-primary" type="submit">Créer compte prestataire</button>
 
@@ -38,7 +38,7 @@
                                 <div class="mb-3"><label class="form-label">Telephone</label><input type="tel" class="form-control" name="phone"></div>
                                 <div class="mb-3"><label class="form-label">Domaine de service</label><input class="form-control" name="speciality"></div>
                                 <div class="mb-3"><label class="form-label">mot de passe</label><input class="form-control" name="password" type="password"></div>
-                                <div class="mb-3"><label class="form-label">confirmer le mot de passe</label><input class="form-control" name="password_confirmation" type="password"></div>
+                                {{-- <div class="mb-3"><label class="form-label">confirmer le mot de passe</label><input class="form-control" name="password_confirmation" type="password"></div> --}}
 
 
                                 <button class="btn btn-primary" type="submit">Créer compte employeur</button>
@@ -46,7 +46,11 @@
                         </div>
                     </div>
                 </div>
+                <a href="{{ route("login") }}" class=" mt-4" >Vous avez un compte? connectez-vous</a>
+
             </div>
+
+
         </div>
 
     </div>

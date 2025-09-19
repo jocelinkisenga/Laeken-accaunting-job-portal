@@ -1,26 +1,27 @@
 @extends('front.front')
 @section('title', 'a propos')
 @section('content')
-<div class="container my-5 bg-white">
-    <div class="row">
-        <div class="row-cols-1 g-5 justify-center">
 
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <div class="card-title">
-                        <h1> {{ $job->title }}</h1>
-                        <p class="text-muted"> Auteur <strong>Laeken Consulting</strong>. fin candidature le {{ $job->created_at }} <a href="{{ route("create.candidate") }}" class="btn btn-rounded read-more py-md-3 px-md-5 me-3 ">Postuler au job</a>
-                        </p>
+<main class="py-5">
+    <div class="container container-max">
+        <h2>Détails de l'offre</h2>
 
-                    </div>
-                    <p class="card-text">
-                        {{ $job->description }}
+        <div class="card p-4">
+            <h3>{{ $job->title}}</h3>
 
-                    </p>
-                </div>
-            </div>
+            <p class="small-muted">{{ $job->user->name }} • {{ $job->type }}</p>
+            <h5>Description</h5>
+            <p class="small-muted">{{ $job->description }}</p>
+
+            <a href="{{ route("create.candidate", ["boulotId" => $job->id]) }}" class="btn btn-primary">Postuler</a>
+
+            <a href="{{ route("front.jobs") }}" class="btn btn-outline-secondary">Soumettre une offre similaire</a>
         </div>
+
     </div>
-</div>
+</main>
+
+
+
 @endsection
 

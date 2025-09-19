@@ -40,7 +40,8 @@ class JobController extends Controller
 
     public function front()
     {
-        return view("front.jobs", ["jobs" => Boulot::whereDone(false)->latest()->get()]);
+        $jobs = Boulot::wherePublished(true)->whereDone(false)->latest()->get();
+        return view("front.jobs", compact(var_name: 'jobs'));
     }
 
     public function single($title, $id)
@@ -54,10 +55,15 @@ class JobController extends Controller
         return redirect()->back();
     }
 
-    public function confirm($id)
+    public function publish($id)
     {
         $boulot = Boulot::findOrFail($id);
-        $boulot->update(['done' => true]);
+        $boulot->update(attributes: ['published' => true]);
         return redirect()->back();
+    }
+
+    public function adminJobs()
+    {
+        return view("admin.jobs", ['boulots' => Boulot::with("user")->whereDone(false)->latest()->get()]);
     }
 }

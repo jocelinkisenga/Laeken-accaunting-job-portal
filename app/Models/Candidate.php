@@ -9,12 +9,20 @@ class Candidate extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        "name",
-        "email",
-        "phone",
-        "domaine",
-        "cv",
-        "motivation"
-    ];
+protected $fillable = [
+    'user_id',
+    'boulot_id',
+    'cv',
+    'description',
+    'confirm'
+];
+
+protected $casts = [
+    'confirm' => 'boolean',
+];
+
+public function boulot () {
+    return $this->belongsTo(Boulot::class);
+}
+
 }

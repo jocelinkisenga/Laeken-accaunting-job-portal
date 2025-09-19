@@ -13,11 +13,21 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach ($applications as $application)
                 <tr>
-                    <td>Comptable</td>
-                    <td>05 Sep 2025</td>
-                    <td><span class="badge bg-success">En cours</span></td>
+                    <td>{{ $application->boulot->title }}</td>
+                    <td>{{ $application->created_at }}</td>
+                    <td>
+                        @if ($application->confirm == true)
+                        veuillez verifier votre mail
+                        @else
+                        <span class="badge bg-success">En cours</span>
+
+                        @endif
+                    </td>
                 </tr>
+
+                @endforeach
             </tbody>
         </table>
 

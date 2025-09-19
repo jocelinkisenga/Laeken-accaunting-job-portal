@@ -1,4 +1,4 @@
-@extends("admin.admin")
+@extends("front.front")
 @section("content")
 @php
     use \App\Models\Article;
@@ -6,123 +6,42 @@
     use \App\Models\Candidate;
     use \App\Models\Company;
 
-
 @endphp
-<!-- Page Heading -->
-<h1 class="h3 mb-4 text-gray-800">Dashboard</h1>
+<main class="py-5">
+    <div class="container container-max">
+        <h2>Dashboard Admin</h2>
 
-<!-- Content Row (Cards) -->
-<div class="row">
-
-    <!-- Messages Card -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-left-primary shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                            Offres en cours </div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">{{ Boulot::whereDone(false)->count() }}</div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="{{ route("admin.compagnies") }}" class="list-group-item">Societes</a>
+                    <a href="{{ route("admin.candidates") }}" class="list-group-item">Candidats</a>
+                    <a href="{{ route("admin.index.job") }}" class="list-group-item">Offres</a>
+                    <a href="{{ route("admin.index.article") }}" class="list-group-item">Articles</a>
+                    <a href="reports.html" class="list-group-item">Rapports</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h5>Tableau de bord - Admin</h5>
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <div class="card p-3">Utilisateurs<br><strong>1,580</strong></div>
                     </div>
-                    <div class="col-auto">
-                        <i class="fas fa-envelope fa-2x text-gray-300"></i>
+                    <div class="col-md-3">
+                        <div class="card p-3">Offres<br><strong>1,200</strong></div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-3">Revenus mensuels<br><strong>$12,300</strong></div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-3">Tickets ouverts<br><strong>6</strong></div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
-
-    <!-- Revenus Card -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-left-success shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                            Offres confimees</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">{{ Boulot::whereDone(true)->count() }}</div>
-
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-left-success shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                            Total offres</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">{{ Boulot::count() }}</div>
-
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Notifications Card -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-left-warning shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                           Nombres d'articles</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">{{ Article::count() }}</div>
-
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas fa-bell fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                Total candidats</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ Candidate::count() }}</div>
-                        </div>
-                        <div class="col-auto">
-                            <i class="fas fa-bell fa-2x text-gray-300"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-            <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-warning shadow h-100 py-2">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                    Totals societes</div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{ Company::count() }}</div>
-                            </div>
-                            <div class="col-auto">
-                                <i class="fas fa-bell fa-2x text-gray-300"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-</div>
-<!-- End Content Row -->
+</main>
 
 
 @endsection

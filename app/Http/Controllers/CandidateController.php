@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Candidate;
 use App\Http\Requests\StoreCandidateRequest;
 use App\Http\Requests\UpdateCandidateRequest;
+use App\Models\Boulot;
 
 class CandidateController extends Controller
 {
@@ -19,10 +20,11 @@ class CandidateController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(int $boulotId)
     {
-     
-        return \view("front.formCandidate");
+        $boulot = Boulot::findOrFail($boulotId);
+
+        return \view("front.formCandidate",["boulotId" => $boulot->id]);
     }
 
     /**

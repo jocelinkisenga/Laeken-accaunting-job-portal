@@ -2,57 +2,39 @@
 @section("title", "login as admin")
 
 @section('content')
-<div class="row align-items-center justify-content-center height-self-center mt-4">
-    <div class="col-lg-8">
-        <div class="card auth-card">
-            <div class="card-body p-0">
-                <div class="d-flex align-items-center auth-content">
-                    <div class="col-lg-7 align-self-center m-4">
-                        <div class="p-3">
+<main class="py-5">
+    <div class="container container-max">
 
-                            <h2 class="mb-2">Authentifiez-vous pour gerer votre Plateforme</h2>
-                            <p.</p>
 
-                            <form action="{{ route('login') }}" method="POST">
-                                @csrf
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="floating-label form-group mb-3">
-                                            <input class="floating-input form-control @error('email') is-invalid @enderror @error('username') is-invalid @enderror" type="text" name="input_type" placeholder=" " value="{{ old('input_type') }}" autocomplete="off" required autofocus>
-                                            <label>Email</label>
-                                        </div>
-                                        @error('username')
-                                        <div class="mb-4" style="margin-top: -20px">
-                                            <div class="text-danger small">Incorrect username or password.</div>
-                                        </div>
-                                        @enderror
-                                        @error('email')
-                                        <div class="mb-4" style="margin-top: -20px">
-                                            <div class="text-danger small">Incorrect username or password.</div>
-                                        </div>
-                                        @enderror
-                                    </div>
-                                    <div class="col-lg-12 mt-3">
-                                        <div class="floating-label form-group">
-                                            <input class="floating-input form-control @error('email') is-invalid @enderror @error('username') is-invalid @enderror" type="password" name="password" placeholder=" " required>
-                                            <label>Mot de passe</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <a href="#" class="text-primary float-right"></a>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn read-more justify-content-center mt-3">se conecter</button>
-                            </form>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4">
+                <div class="card p-4">
+                    <h4>Connexion</h4>
+                    <form action="{{ route("login") }}" method="POST">
+                        @csrf
+                        <div class="mb-3"><label class="form-label">Email</label>
+
+                            <input class="form-control  type=" text" name="input_type" placeholder=" " autocomplete="off" required autofocus>
+
+
                         </div>
-                    </div>
 
-                    <div class="col-lg-5 content-right">
-                        <img src="{{ asset('assets/images/login/01.png') }}" class="img-fluid image-right" alt="">
-                    </div>
+                        <div class="mb-3"><label class="form-label">Mot de passe</label><input type="password" class="form-control" name="password"></div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div><input type="checkbox"> Se souvenir</div>
+                            <a href="#" class="small-muted">Mot de passe oublié?</a>
+                        </div>
+                        <button class="btn btn-primary w-100" type="submit">Se connecter</button>
+                    </form>
+
                 </div>
+                <div class="mb-3"><a  href="{{ route("register") }}" >Vous n'avez pas de compte? creez-en</a></div>
+
             </div>
         </div>
+
     </div>
-</div>
+</main>
+
+
 @endsection

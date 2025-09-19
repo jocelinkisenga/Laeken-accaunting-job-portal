@@ -2,9 +2,9 @@
 @section("content")
 <main class="py-5">
     <div class="container container-max">
-        <h2>Dashboard Prestataire</h2>
+        <h3>Bienvenu sur votre dashboard {{ Auth::user()->name }}</h3>
 
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-md-3">
                 <div class="list-group">
                     <a href="{{ route("prestataire.myapplications") }}" class="list-group-item list-group-item-action">Mes candidatures</a>
@@ -14,7 +14,7 @@
                 <h5>Tableau de bord - Prestataire</h5>
                 <div class="row g-3">
                     <div class="col-md-4">
-                        <div class="card p-3">Candidatures envoyées<br><strong>12</strong></div>
+                        <div class="card p-3">Candidatures envoyées<br><strong>{{ \App\Models\Candidate::whereUserId(Auth::user()->id)->count() }}</strong></div>
                     </div>
                 </div>
             </div>
