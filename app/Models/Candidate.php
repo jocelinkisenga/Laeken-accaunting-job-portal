@@ -25,4 +25,10 @@ public function boulot () {
     return $this->belongsTo(Boulot::class);
 }
 
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+
 }

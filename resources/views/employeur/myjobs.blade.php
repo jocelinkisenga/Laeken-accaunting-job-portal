@@ -26,7 +26,7 @@
                         Boulot regle
                         @endif
                     </td>
-                    <td><a class="btn btn-sm">Modifier</a></td>
+                    <td><a href="{{ route("employeur.mycandidates",['id' =>$boulot->id]) }}" class="btn btn-sm btn-primary">voir</a></td>
                 </tr>
 
                 @empty

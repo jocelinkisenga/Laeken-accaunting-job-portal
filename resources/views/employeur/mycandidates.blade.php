@@ -7,17 +7,26 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>Candidat</th>
-                    <th>Expérience</th>
-                    <th></th>
+                    <th>Nom</th>
+                    <th>Email</th>
+                    <th>specialite</th>
+                    <th>cv</th>
+                    <th>action</th>
                 </tr>
             </thead>
             <tbody>
+                @foreach ($prestataires as $prestataire)
                 <tr>
-                    <td>Jean</td>
-                    <td>3 ans</td>
-                    <td><a class="btn btn-sm">Voir</a></td>
+                    <td>{{ $prestataire->name }}</td>
+                    <td>{{ $prestataire->email }}</td>
+                    <td>{{ $prestataire->speciality }}</td>
+
+                    <td><a href="" class="btn btn-sm btn-primary">voir</a></td>
+
+                    <td><a class="btn btn-sm btn-danger">Voir</a></td>
                 </tr>
+
+                @endforeach
             </tbody>
         </table>
 

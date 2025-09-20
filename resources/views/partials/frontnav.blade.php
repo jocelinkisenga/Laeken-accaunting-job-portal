@@ -13,6 +13,20 @@
 
                 @endguest
                 @auth
+                @switch(Auth::user()->role)
+                    @case(2)
+                <li class="nav-item ms-3"><a class="btn btn-primary" href="{{ route("dashboard-prestataire") }}">Dashboard</a></li>
+                        @break
+                        @case(3)
+<li class="nav-item ms-3"><a class="btn btn-primary" href="{{ route("dashboard.employeur") }}">Dashboard</a></li>
+
+                        @break
+
+                    @default
+<li class="nav-item ms-3"><a class="btn btn-primary" href="/dashboard-admin">Dashboard</a></li>
+
+
+                @endswitch
                 <li class="nav-item ms-3">
                     <form action="{{ route("logout") }}" method="post">
                         @csrf

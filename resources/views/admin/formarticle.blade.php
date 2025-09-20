@@ -1,11 +1,11 @@
-@extends("admin.admin")
+@extends("front.front")
 @section("content")
-<div class="card shadow mb-4">
-    <div class="card-header py-3">
+<main class="py-5">
+    <div class="container container-max">
 
         <div class="row">
             <div class="col-6">
-                <h6 class="m-0 font-weight-bold text-primary">AJOUTER UN ARTICLE</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Ajouter un article</h6>
             </div>
 
             <div class="col-6"></div>
@@ -44,7 +44,7 @@
                     placeholder=""
                     aria-describedby="fileHelpId"
                 />
-              
+
             </div>
 
             <fieldset class="mb-3 row">
@@ -72,8 +72,6 @@
             </div>
         </form>
     </div>
-
-
-
 </div>
+</main>
  @endsection

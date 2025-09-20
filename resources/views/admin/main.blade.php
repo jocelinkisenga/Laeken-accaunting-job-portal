@@ -9,9 +9,9 @@
 @endphp
 <main class="py-5">
     <div class="container container-max">
-        <h2>Dashboard Admin</h2>
+        <h2>Bon retour mons  l'Admin</h2>
 
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-md-3">
                 <div class="list-group">
                     <a href="{{ route("admin.compagnies") }}" class="list-group-item">Societes</a>

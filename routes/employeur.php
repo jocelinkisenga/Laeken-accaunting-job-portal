@@ -9,7 +9,7 @@ Route::middleware(["auth","role:3"])->group(function () {
     Route::get("dashboard-employeur" , action: [EmployeurController::class, "index"])->name("dashboard.employeur");
 
     Route::get("employeur-jobs",  [EmployeurController::class, "myjobs"])->name("employeur.myjobs");
-    Route::get("employeur-mycandidates", action: [EmployeurController::class, "mycandidates"])->name("employeur.mycandidates");
+    Route::get("employeur-mycandidates/{id}", action: [EmployeurController::class, "mycandidates"])->name("employeur.mycandidates");
 
     Route::get("createJob", [JobController::class, "create"])->name("create.job");
 

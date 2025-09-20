@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::middleware(["auth", "role:1"])->group(function (){
-Route::get("dashboard-admin", [AdminController::class,"index"])->name("admin.home");
+Route::get("dashboard-admin", [AdminController::class,"index"])->name("dashboard.admin");
 Route::get("adminCandidates",[AdminCandidateController::class,"index"])->name("admin.candidates");
 Route::get("adminCompagnies",[AdminCompanController::class,"index"])->name("admin.compagnies");
 Route::get("/cv/{id}", [ConfirmCandidateController::class,"cv"])->name("cv");
