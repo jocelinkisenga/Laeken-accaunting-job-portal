@@ -52,7 +52,7 @@ body {
 }
 
 .navbabg {
-     background: var(--brand);
+     background-color: #1b1bf3;
 }
 .small-muted {
     color: var(--muted);
