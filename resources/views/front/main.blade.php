@@ -37,7 +37,8 @@
                 </div>
             </div>
             <div class="col-md-6 text-center">
-                <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?w=900&q=80" alt="hero" class="img-fluid rounded shadow-sm">
+                <img src="{{ asset('img/carousel-1.jpg') }}" alt="hero" class="img-fluid rounded shadow-sm">
+
             </div>
         </div>
     </div>
