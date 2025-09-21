@@ -14,7 +14,7 @@
                     @guest
                     <a href="{{  route("front.jobs") }}" class="btn btn-primary me-2">Voir les offres</a>
 
-                    <a href="{{ route("register") }}}}" class="btn btn-outline-secondary">S'inscrire</a>
+                    <a href="{{ route("register") }}" class="btn btn-outline-secondary">S'inscrire</a>
 
                     @endguest
                     @auth
