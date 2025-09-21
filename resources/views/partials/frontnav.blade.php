@@ -4,8 +4,9 @@
         <a class="navbar-brand" href="/">
             <img src="{{ asset("logo.png") }}" class="img-fluid rounded-circle" style="width:40px; height:40px" alt="logo laeken" />
             Laeken Consulting</a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navmenu">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false"
+        aria-label="Toggle navigation "><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navmenu" >
             <ul class="navbar-nav ms-auto align-items-lg-center text-white">
                 <li class="nav-item"><a class="nav-link navbar-brand" href="{{ route("front.jobs") }}">Offres</a></li>
 
