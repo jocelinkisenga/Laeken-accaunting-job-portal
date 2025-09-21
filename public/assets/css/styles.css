@@ -36,7 +36,7 @@ body {
     /* padding: 1rem 0; */
 }
 .btn-primary {
-    background: var(--brand);
+    background:  #1b1bf3;
     border-color: var(--brand);
 }
 
