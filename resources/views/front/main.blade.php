@@ -53,7 +53,8 @@
                     <div class="card-body">
                         <h5>{{ $job->title }}</h5>
                         <p class="small-muted mb-1">Entreprise: {{ $job->user->name }} • {{ $job->type }}</p>
-                        <a href="job-details.html" class="stretched-link"></a>
+                        <a href="{{ route("front.single.job", ['title'=> $job->title, "id" => $job->id]) }}" class="stretched-link"></a>
+
                     </div>
                 </div>
             </div>
