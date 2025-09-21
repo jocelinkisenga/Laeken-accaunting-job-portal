@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark navbabg sticky-top shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
 
     <div class="container container-max">
         <a class="navbar-brand" href="/">
