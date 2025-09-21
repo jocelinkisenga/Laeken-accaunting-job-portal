@@ -28,6 +28,13 @@
     <!-- Template Stylesheet -->
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <!-- PWA  -->
+   <style>
+        .navbar .navbabg .nav-link,
+        .navbar .navbabg , .navbar-brand{
+        color:#ffffff !important;
+        }
+
+   </style>
     <meta name="theme-color" content="#6777ef" />
     <link rel="apple-touch-icon" href="{{ asset('maskable_icon.png') }}">
     <link rel="manifest" href="{{ asset('/manifest.json') }}">

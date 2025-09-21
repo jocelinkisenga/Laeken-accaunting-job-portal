@@ -44,7 +44,7 @@
         </div>
     </div>
 
-    @include('partials.cta')
+  
 <!--
     <div class="container-xxl py-5">
         <div class="container">

@@ -1,5 +1,5 @@
 <div>
-    
+
        <!-- Header Start -->
        <div class="container-fluid bg-primary py-5 mb-5 page-header">
         <div class="container py-5">
@@ -17,7 +17,7 @@
         </div>
     </div>
     <!-- Header End -->
- @include("partials.cta")
+
 
     <!-- Contact Start -->
     <div class="container-xxl py-5">
@@ -29,7 +29,7 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h5></h5>
-                    
+
                     <div class="d-flex align-items-center mb-3">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 read-more" style="width: 50px; height: 50px;">
                             <i class="fa fa-map-marker-alt text-white"></i>
@@ -76,7 +76,7 @@
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="text" wire:model="name" class="form-control" id="name" placeholder="votre nom" required>
-                                    <label for="name">Nom             
+                                    <label for="name">Nom
                             </label>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                             <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" wire:model="subject" class="form-control" id="sujet" placeholder="votre sujet" required>
-                                    <label for="subject">Sujet 
+                                    <label for="subject">Sujet
 
                                     </label>
                                 </div>
