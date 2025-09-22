@@ -24,7 +24,7 @@ body {
 
 
 .hero {
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 .card-ghost {
     background: transparent;
@@ -79,4 +79,40 @@ body {
 }
 .card-compact {
     padding: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  height: 250px;      /* hauteur par défaut (mobile) */
+  object-fit: cover;
+}
+
+/* Tablette (≥768px) */
+@media (min-width: 768px) {
+  .hero img {
+    height: 350px;
+  }
+}
+
+/* Desktop (≥1200px) */
+@media (min-width: 1200px) {
+  .hero img {
+    height: 500px;
+  }
+}
+
+.hero .carousel-item {
+  position: relative;
+}
+
+.hero .carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* prend toute la place */
+  background: rgba(0, 0, 0, 0.4); /* noir transparent (40%) */
+}
+
+.hero .carousel-caption {
+  position: absolute;
+  z-index: 2; /* passe au-dessus de l’overlay */
 }
