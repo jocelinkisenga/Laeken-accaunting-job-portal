@@ -24,7 +24,7 @@
                 @auth
                 @switch(Auth::user()->role)
                     @case(2)
-                <li class="nav-item ms-3"><a class="btn bg-white" href="{{ route("dashboard-prestataire") }}">Dashboard</a></li>
+                <li class="nav-item ms-3"><a class="btn bg-white" href="{{ route("dashboard.prestataire") }}">Dashboard</a></li>
                         @break
                         @case(3)
 <li class="nav-item ms-3"><a class="btn btn-primary" href="{{ route("dashboard.employeur") }}">Dashboard</a></li>
